@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="root" alignment="CENTER" minHeight="1000.0" minWidth="1500.0" prefHeight="2000.0" prefWidth="1530.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.game.puertorico.PuertoRicoController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <GridPane maxWidth="1530.0" prefHeight="2000.0" prefWidth="1530.0" translateY="-20.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="510.60003662109375" minWidth="10.0" prefWidth="75.80003356933594" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.000048828125" minWidth="10.0" prefWidth="514.4000122070313" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="510.60003662109375" minWidth="10.0" prefWidth="237.5999877929687" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.199951171875" minWidth="10.0" prefWidth="272.1999877929687" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="20.8" minHeight="10.0" prefHeight="20.8" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="5.600012683868409" minHeight="0.0" prefHeight="2.5999755859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="82.2000244140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.79999389648435" minHeight="3.1999938964843864" prefHeight="3.1999938964843864" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="213.00000610351566" minHeight="10.0" prefHeight="213.00000610351566" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="130.0000122070312" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="218.19999999999993" minHeight="10.0" prefHeight="218.19999999999993" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ScrollPane prefHeight="1900.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+               <content>
+                  <AnchorPane maxWidth="1460.0" prefHeight="2000.0" prefWidth="1530.0" style="-fx-background-image: url(&quot;https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8184.jpg?w=900&amp;t=st=1711230275~exp=1711230875~hmac=fd02cd70f409253549abf6ed3d7949e6f708f7cc66b1bccc5083f6d4cc529145&quot;); -fx-border-image-repeat: no-repeat; -fx-background-size: contain; -fx-background-size: ;">
+                     <children>
+                        <ImageView fitHeight="162.0" fitWidth="236.0" layoutX="28.0" layoutY="831.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" scaleY="2.0" translateX="20.0" translateY="10.0">
+                           <image>
+                              <Image url="@images/beige-paper-background-simple-diy-craft.jpg" />
+                           </image>
+                        </ImageView>
+                        <GridPane layoutX="10.0" layoutY="177.0" maxWidth="544.0" prefHeight="255.0" prefWidth="414.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="258.0" prefWidth="406.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P1BuildingBtn00" alignment="TOP_LEFT" disable="true" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn01" alignment="TOP_LEFT" disable="true" layoutX="138.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn02" alignment="TOP_LEFT" disable="true" layoutX="276.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn10" alignment="TOP_LEFT" disable="true" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn11" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn12" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn20" alignment="TOP_LEFT" disable="true" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P1BuildingBtn21" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1BuildingBtn22" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="139.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font></Button>
+                                    <RadioButton fx:id="P1RadioBtn11" disable="true" layoutX="7.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn12" disable="true" layoutX="25.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn13" disable="true" layoutX="43.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn51" disable="true" layoutX="144.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn52" disable="true" layoutX="162.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn53" disable="true" layoutX="180.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn91" disable="true" layoutX="282.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn92" disable="true" layoutX="300.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn93" disable="true" layoutX="318.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn21" disable="true" layoutX="1.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn22" disable="true" layoutX="19.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="0.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn23" disable="true" layoutX="37.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn31" disable="true" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn32" disable="true" layoutX="19.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn33" disable="true" layoutX="37.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn41" disable="true" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="134.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn42" disable="true" layoutX="28.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="134.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn43" disable="true" layoutX="46.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="134.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn61" disable="true" layoutX="138.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn62" disable="true" layoutX="156.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn63" disable="true" layoutX="174.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn71" disable="true" layoutX="285.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn72" disable="true" layoutX="303.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn73" disable="true" layoutX="321.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn81" disable="true" layoutX="282.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn82" disable="true" layoutX="300.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P1RadioBtn83" disable="true" layoutX="318.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                 </children></AnchorPane>
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="14.0" layoutY="463.0" maxHeight="180.0" prefHeight="180.0" prefWidth="183.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P1PlantationBtn00" disable="true" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn11" disable="true" layoutX="60.0" layoutY="45.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn01" disable="true" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn02" disable="true" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn12" disable="true" layoutX="60.0" layoutY="104.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn10" disable="true" layoutX="60.0" layoutY="-16.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn22" disable="true" layoutX="120.0" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn20" disable="true" layoutX="120.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P1PlantationBtn21" disable="true" layoutX="120.0" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <Button fx:id="settlerBtn" alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="402.0" layoutY="842.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="145.0" prefWidth="107.0" text="Settler&#10;&#10;&#10;new plantation&#10;-----------------&#10;quarry instead of plantation" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="builderBtn" alignment="TOP_CENTER" layoutX="509.0" layoutY="842.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="145.0" prefWidth="107.0" scaleShape="false" style="-fx-label-padding: 0;" text="Builder&#10;&#10;&#10;building&#10;-----------------&#10;building cost minus 1 doubloon" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="mayorBtn" alignment="TOP_CENTER" layoutX="618.0" layoutY="841.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="146.0" prefWidth="107.0" style="-fx-label-padding: 0;" text="Mayor&#10;&#10;&#10;new colonists&#10;---------------&#10;1 colonist more (from supply)&#10;" textAlignment="CENTER" translateX="-2.0" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="craftsmanBtn" alignment="TOP_CENTER" layoutX="724.0" layoutY="841.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="145.0" prefWidth="107.0" text="Craftsman&#10;&#10;&#10;production&#10;---------------&#10;1 good more (from supply)" textAlignment="CENTER" translateX="-1.0" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="captainBtn" alignment="TOP_CENTER" layoutX="937.0" layoutY="841.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="146.0" prefWidth="107.0" text="Captain&#10;&#10;&#10;goods delivery&#10;---------------&#10;1 victory point more (total)" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="prospectorBtn" alignment="TOP_CENTER" layoutX="1052.0" layoutY="859.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="145.0" prefWidth="107.0" text="Prospector&#10;&#10;&#10;...&#10;---------------&#10;1 doubloon from the bank&#10;" textAlignment="CENTER" visible="false" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <TextField fx:id="cornStock" alignment="CENTER" editable="false" layoutX="6.0" layoutY="952.0" prefHeight="26.0" prefWidth="29.0" translateX="20.0" translateY="10.0" />
+                        <TextField fx:id="indigoStock" alignment="CENTER" editable="false" layoutX="65.0" layoutY="952.0" prefHeight="26.0" prefWidth="29.0" translateX="20.0" translateY="10.0" />
+                        <TextField fx:id="coffeeStock" alignment="CENTER" editable="false" layoutX="124.0" layoutY="952.0" prefHeight="26.0" prefWidth="29.0" translateX="20.0" translateY="10.0" />
+                        <TextField fx:id="tobaccoStock" alignment="CENTER" editable="false" layoutX="186.0" layoutY="952.0" prefHeight="26.0" prefWidth="29.0" translateX="20.0" translateY="10.0" />
+                        <MenuBar layoutX="-2.0" layoutY="1.0" prefHeight="26.0" prefWidth="1466.0">
+                          <menus>
+                            <Menu mnemonicParsing="false" text="File">
+                              <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#startNewGame" text="New game" />
+                                <MenuItem fx:id="saveGame" mnemonicParsing="false" onAction="#saveGame" text="Save game" />
+                                    <MenuItem fx:id="loadGame" mnemonicParsing="false" onAction="#loadGame" text="Load game" />
+                                    <MenuItem mnemonicParsing="false" onAction="#replayGame" text="Replay" />
+                              </items>
+                            </Menu>
+                            <Menu mnemonicParsing="false" text="Documentation">
+                              <items>
+                                <MenuItem mnemonicParsing="false" onAction="#generateDocumentation" text="Generate" />
+                              </items>
+                            </Menu>
+                              <Menu mnemonicParsing="false" text="Options" />
+                            <Menu mnemonicParsing="false" text="Help">
+                              <items>
+                                <MenuItem mnemonicParsing="false" text="About" />
+                              </items>
+                            </Menu>
+                          </menus>
+                        </MenuBar>
+                        <Line endX="374.71441650390625" endY="-0.99993896484375" layoutX="108.0" layoutY="706.0" startX="-107.80001068115234" />
+                        <Line endX="152.800048828125" endY="-477.6000061035156" layoutX="327.0" layoutY="500.0" startX="155.00726318359375" startY="199.29290771484375" translateY="5.0" />
+                        <Line endX="380.0" layoutX="100.0" layoutY="1199.0" startX="-100.0" />
+                        <Line endX="83.800048828125" endY="-338.5" layoutX="399.0" layoutY="1538.0" startX="83.800048828125" startY="339.5" />
+                        <Button fx:id="traderBtn" alignment="TOP_CENTER" layoutX="830.0" layoutY="841.0" mnemonicParsing="false" onAction="#roleClicked" prefHeight="145.0" prefWidth="107.0" text="Trader&#10;&#10;&#10;goods sale&#10;---------------&#10;1 doubloon more from the bank" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Eras Medium ITC" size="13.0" />
+                           </font></Button>
+                        <Line endX="150.5928955078125" endY="-470.6000061035156" layoutX="838.0" layoutY="497.0" startX="144.178466796875" startY="206.5" />
+                        <Line endX="420.0" endY="1.2071533203125" layoutX="1040.0" layoutY="703.0" startX="-57.1143798828125" startY="1.20709228515625" />
+                        <Line endX="380.0" layoutX="102.0" layoutY="1878.0" startX="-100.0" />
+                        <GridPane layoutX="512.0" layoutY="118.0" minHeight="255.0" prefHeight="480.0" prefWidth="408.0" translateX="17.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="464.0" prefWidth="408.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="coffeeBtn" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="272.0" layoutY="86.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, dimgray); -fx-border-color: gray;" text="VP: 3 Cost: 6&#10;coffee roaster&#10;○○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="smallIndigoBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, cornflowerblue); -fx-border-color: gray;" text="VP: 1 Cost: 1&#10;small indigo plant&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="smallSugarBtn" alignment="TOP_LEFT" layoutY="86.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, wheat); -fx-border-color: gray;" text="VP: 1 Cost: 2&#10;small sugar mill&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="smallMarketBtn" alignment="TOP_LEFT" layoutY="172.0" minHeight="75.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 1 Cost: 1&#9;&#9;&#10;small market&#10;=&gt; +1 doubloon with &#10;sale (trader phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="haciendaBtn" alignment="TOP_LEFT" layoutY="258.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 1 Cost: 2&#9;&#9;&#10;hacienda&#10;=&gt; +1 plantation from &#10;supply (settler phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="constructionBtn" alignment="TOP_LEFT" contentDisplay="TOP" layoutY="344.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 1 Cost: 2&#9;&#9;&#10;construction hut&#10;=&gt; quarry instead of &#10;plantation (settler phase)&#10;○" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="indigoBtn" alignment="TOP_LEFT" layoutX="136.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, cornflowerblue); -fx-border-color: gray;" text="VP: 2 Cost: 3&#10;indigo plant&#10;○○○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="sugarBtn" alignment="TOP_LEFT" layoutX="136.0" layoutY="86.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, wheat); -fx-border-color: gray;" text="VP: 2 Cost: 4&#10;sugar mill&#10;○○○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="hospiceBtn" alignment="TOP_LEFT" layoutX="136.0" layoutY="172.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 2 Cost: 4&#10;hospice&#10;=&gt; +1 colonist for&#10;settling (settler phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="officeBtn" alignment="TOP_LEFT" layoutX="136.0" layoutY="258.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 2 Cost: 5&#10;office&#10;=&gt; sell same kind of&#10;goods (trader phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="largeMarketBtn" alignment="TOP_LEFT" layoutX="136.0" layoutY="344.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 2 Cost: 5&#10;large market&#10;=&gt; +2 doubloons with&#10;sale (trader phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="tobaccoBtn" alignment="TOP_LEFT" layoutX="272.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 80% , white, saddlebrown); -fx-border-color: gray;" text="VP: 3 Cost: 5&#10;tobacco barn&#10;○○○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="factoryBtn" alignment="TOP_LEFT" layoutX="272.0" layoutY="172.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 3 Cost: 7&#10;factory&#10;=&gt; +0/1/2/3/5 doubloons&#10;with production (craftsman phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="universityBtn" alignment="TOP_LEFT" layoutX="272.0" layoutY="258.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 3 Cost: 8&#10;university&#10;=&gt; +1 colonist for&#10;building (building phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="harborBtn" alignment="TOP_LEFT" layoutX="272.0" layoutY="344.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 3 Cost: 8&#10;harbor&#10;=&gt; +1 victory point per&#10;delivery (captain phase)&#10;○">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="smallWarehouseBtn" alignment="TOP_LEFT" layoutY="429.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 1 Cost: 3&#10;small warehouse&#10;=&gt; store 1 kind of &#10;goods (captain phase)&#10;○" visible="false">
+                                       <font>
+                                          <Font name="Calisto MT" size="12.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="largeWarehouseBtn" alignment="TOP_LEFT" layoutX="136.0" layoutY="429.0" mnemonicParsing="false" onAction="#buildingClicked" prefHeight="85.0" prefWidth="136.0" style="-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 85% , white, violet); -fx-border-color: gray;" text="VP: 2 Cost: 5&#10;large warehouse&#10;=&gt; store 2 kinds of&#10;goods (captain phase)&#10;○" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <Text layoutX="14.0" layoutY="816.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BANK" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="257.75665283203125">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="938.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock of goods" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="257.75665283203125">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="-11.0" layoutY="996.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORN" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="107.0" layoutY="996.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COFFEE" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="48.0" layoutY="996.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INDIGO" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="167.0" layoutY="995.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOBACCO" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <TextField fx:id="sugarStock" alignment="CENTER" editable="false" layoutX="248.0" layoutY="952.0" prefHeight="26.0" prefWidth="29.0" translateX="20.0" translateY="10.0" />
+                        <Text layoutX="232.0" layoutY="995.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUGAR" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="10.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOUBLOONS" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="83.35662841796875">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="91.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORY POINTS" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="107.35665893554688">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="201.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLONISTS" textAlignment="CENTER" translateX="20.0" translateY="10.0" wrappingWidth="76.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="696.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" translateX="17.0" wrappingWidth="20.956634521484375">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="818.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" translateX="17.0" wrappingWidth="20.956634521484375">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="11.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 1" wrappingWidth="156.95662689208984">
+                           <font>
+                              <Font name="Century" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="player2Label" layoutX="1015.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 2" wrappingWidth="156.95662689208984">
+                           <font>
+                              <Font name="Century" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="13.0" layoutY="1319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER 3" wrappingWidth="156.95662689208984">
+                           <font>
+                              <Font name="Century" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="578.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" translateX="17.0">
+                           <image>
+                              <Image url="https://png2.cleanpng.com/sh/2f97160122ac85fb8d7f11d2e466565b/L0KzQYm3VMIzN6pBj5H0aYP2gLBuTfdzaaFtgdU2ZHX2ebj1TgJwa5wyjtdsdHB1PYbohPNkapJnSqICYnW8PoK9V8E1P2Q6Sac7NES0SYWCWcE0O2IziNDw/kisspng-graphic-design-rock-vector-5adccbab207be9.1671473515244194991331.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="568.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" translateX="17.0" wrappingWidth="20.956634521484375">
+                           <font>
+                              <Font name="Century" size="16.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="716.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" translateX="17.0">
+                           <image>
+                              <Image url="https://png2.cleanpng.com/sh/2f97160122ac85fb8d7f11d2e466565b/L0KzQYm3VMIzN6pBj5H0aYP2gLBuTfdzaaFtgdU2ZHX2ebj1TgJwa5wyjtdsdHB1PYbohPNkapJnSqICYnW8PoK9V8E1P2Q6Sac7NES0SYWCWcE0O2IziNDw/kisspng-graphic-design-rock-vector-5adccbab207be9.1671473515244194991331.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="838.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" translateX="17.0">
+                           <image>
+                              <Image url="https://png2.cleanpng.com/sh/2f97160122ac85fb8d7f11d2e466565b/L0KzQYm3VMIzN6pBj5H0aYP2gLBuTfdzaaFtgdU2ZHX2ebj1TgJwa5wyjtdsdHB1PYbohPNkapJnSqICYnW8PoK9V8E1P2Q6Sac7NES0SYWCWcE0O2IziNDw/kisspng-graphic-design-rock-vector-5adccbab207be9.1671473515244194991331.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="quarryBtn" disable="true" layoutX="1201.0" layoutY="855.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="60.0" text="Quarry&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font></Button>
+                        <Button fx:id="plantationBtn0" layoutX="1269.0" layoutY="855.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Corn&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font></Button>
+                        <Button fx:id="plantationBtn1" layoutX="1331.0" layoutY="855.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Sugar&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font></Button>
+                        <Button fx:id="plantationBtn2" layoutX="1393.0" layoutY="855.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Tobacco&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font></Button>
+                        <Button fx:id="plantationBtn3" layoutX="1269.0" layoutY="915.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Coffee&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font></Button>
+                        <Text layoutX="623.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUILDINGS" textAlignment="CENTER" wrappingWidth="205.75662231445312">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="1217.0" layoutY="832.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLANTATIONS" textAlignment="CENTER" wrappingWidth="205.75662231445312">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="615.0" layoutY="818.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLES" textAlignment="CENTER" wrappingWidth="205.75662231445312">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="449.0" layoutY="1049.0" pickOnBounds="true" style="-fx-opacity: 0.6;">
+                           <image>
+                              <Image url="@images/36430535-colored-vintage-sailing-ship-at-sea-and-the-sky.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="ship1good0" editable="false" layoutX="469.0" layoutY="1091.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship1good1" editable="false" layoutX="493.0" layoutY="1091.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship1good2" editable="false" layoutX="469.0" layoutY="1117.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship1good3" editable="false" layoutX="493.0" layoutY="1117.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="554.0" layoutY="1049.0" pickOnBounds="true" style="-fx-opacity: 0.6;" translateX="-4.0">
+                           <image>
+                              <Image url="@images/36430535-colored-vintage-sailing-ship-at-sea-and-the-sky.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="ship2good0" editable="false" layoutX="575.0" layoutY="1078.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" translateX="-4.0" />
+                        <TextField fx:id="ship2good1" editable="false" layoutX="599.0" layoutY="1078.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" translateX="-4.0" />
+                        <TextField fx:id="ship2good2" editable="false" layoutX="575.0" layoutY="1104.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" translateX="-4.0" />
+                        <TextField fx:id="ship2good3" editable="false" layoutX="599.0" layoutY="1104.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" translateX="-4.0" />
+                        <TextField fx:id="ship2good4" editable="false" layoutX="588.0" layoutY="1130.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" translateX="-4.0" />
+                        <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="652.0" layoutY="1049.0" pickOnBounds="true" style="-fx-opacity: 0.6;">
+                           <image>
+                              <Image url="@images/36430535-colored-vintage-sailing-ship-at-sea-and-the-sky.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="ship3good0" editable="false" layoutX="673.0" layoutY="1078.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship3good1" editable="false" layoutX="697.0" layoutY="1078.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship3good2" editable="false" layoutX="673.0" layoutY="1104.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship3good4" editable="false" layoutX="673.0" layoutY="1130.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship3good3" editable="false" layoutX="697.0" layoutY="1104.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <TextField fx:id="ship3good5" editable="false" layoutX="697.0" layoutY="1130.0" prefHeight="26.0" prefWidth="25.0" style="-fx-opacity: 0.7;" />
+                        <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="1002.0" layoutY="1049.0" pickOnBounds="true" style="-fx-opacity: 0.6;">
+                           <image>
+                              <Image url="@images/money-bag-and-stack-of-gold-coin-vector.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="873.0" layoutY="1049.0" pickOnBounds="true" style="-fx-opacity: 0.6;">
+                           <image>
+                              <Image url="@images/dw21batch2-mynt-03-card.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="colonistShipTextField" alignment="CENTER" editable="false" layoutX="902.0" layoutY="1102.0" prefHeight="29.0" prefWidth="34.0" style="-fx-opacity: 0.9;">
+                           <font>
+                              <Font size="13.0" />
+                           </font></TextField>
+                        <Text layoutX="873.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colonist ship" textAlignment="CENTER" wrappingWidth="93.33673095703125">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1000.0" layoutY="1062.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trading house" textAlignment="CENTER" wrappingWidth="93.33673095703125">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="153.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORN" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="269.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COFFEE" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="212.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INDIGO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="331.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOBACCO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="393.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUGAR" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Button id="Corn" fx:id="P1CornBtn" disable="true" layoutX="170.0" layoutY="112.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" translateY="5.0" />
+                        <Button id="Indigo" fx:id="P1IndigoBtn" disable="true" layoutX="229.0" layoutY="112.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" translateY="5.0" />
+                        <Button id="Coffee" fx:id="P1CoffeeBtn" disable="true" layoutX="289.0" layoutY="112.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" translateY="5.0" />
+                        <Button id="Tobacco" fx:id="P1TobaccoBtn" disable="true" layoutX="348.0" layoutY="112.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" translateY="5.0" />
+                        <Button id="Sugar" fx:id="P1SugarBtn" disable="true" layoutX="410.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" translateY="5.0" />
+                        <Text layoutX="1144.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORN" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1261.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COFFEE" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1203.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INDIGO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1322.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOBACCO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1383.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUGAR" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Button id="Corn" fx:id="P2CornBtn" disable="true" layoutX="1161.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Indigo" fx:id="P2IndigoBtn" disable="true" layoutX="1220.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Coffee" fx:id="P2CoffeeBtn" disable="true" layoutX="1279.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Tobacco" fx:id="P2TobaccoBtn" disable="true" layoutX="1339.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Sugar" fx:id="P2SugarBtn" disable="true" layoutX="1400.0" layoutY="114.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Text layoutX="159.0" layoutY="1328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CORN" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="277.0" layoutY="1328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COFFEE" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="218.0" layoutY="1328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INDIGO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="337.0" layoutY="1327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOBACCO" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="397.0" layoutY="1327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUGAR" textAlignment="CENTER" wrappingWidth="64.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Button id="Corn" fx:id="P3CornBtn" disable="true" layoutX="176.0" layoutY="1278.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Indigo" fx:id="P3IndigoBtn" disable="true" layoutX="235.0" layoutY="1278.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Coffee" fx:id="P3CoffeeBtn" disable="true" layoutX="293.0" layoutY="1278.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Tobacco" fx:id="P3TobaccoBtn" disable="true" layoutX="354.0" layoutY="1278.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <Button id="Sugar" fx:id="P3SugarBtn" disable="true" layoutX="414.0" layoutY="1279.0" maxWidth="30.0" mnemonicParsing="false" onAction="#goodClicked" prefHeight="30.0" prefWidth="30.0" text="0" />
+                        <GridPane layoutX="1014.0" layoutY="175.0" maxWidth="544.0" prefHeight="255.0" prefWidth="414.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="255.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P2BuildingBtn00" alignment="TOP_LEFT" disable="true" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn01" alignment="TOP_LEFT" disable="true" layoutX="138.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn02" alignment="TOP_LEFT" disable="true" layoutX="276.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn10" alignment="TOP_LEFT" disable="true" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn11" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn12" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn20" alignment="TOP_LEFT" disable="true" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn21" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P2BuildingBtn22" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <RadioButton fx:id="P2RadioBtn11" disable="true" layoutX="7.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn12" disable="true" layoutX="25.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn13" disable="true" layoutX="43.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn21" disable="true" layoutX="7.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn22" disable="true" layoutX="25.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn23" disable="true" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn31" disable="true" layoutX="7.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn32" disable="true" layoutX="25.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn33" disable="true" layoutX="43.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn41" disable="true" layoutX="138.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn42" disable="true" layoutX="156.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn43" disable="true" layoutX="174.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn71" disable="true" layoutX="276.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn72" disable="true" layoutX="294.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn73" disable="true" layoutX="312.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn51" disable="true" layoutX="138.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn52" disable="true" layoutX="156.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn53" disable="true" layoutX="174.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn61" disable="true" layoutX="138.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn62" disable="true" layoutX="156.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn63" disable="true" layoutX="174.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn81" disable="true" layoutX="286.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn82" disable="true" layoutX="304.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn83" disable="true" layoutX="322.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn91" disable="true" layoutX="282.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn92" disable="true" layoutX="300.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P2RadioBtn93" disable="true" layoutX="318.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="8.0" layoutY="1339.0" maxWidth="544.0" prefHeight="255.0" prefWidth="414.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="438.0" minWidth="10.0" prefWidth="430.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="255.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P3BuildingBtn00" alignment="TOP_LEFT" disable="true" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn01" alignment="TOP_LEFT" disable="true" layoutX="138.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn02" alignment="TOP_LEFT" disable="true" layoutX="276.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn10" alignment="TOP_LEFT" disable="true" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn11" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn12" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="86.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn20" alignment="TOP_LEFT" disable="true" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn21" alignment="TOP_LEFT" disable="true" layoutX="138.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="P3BuildingBtn22" alignment="TOP_LEFT" disable="true" layoutX="276.0" layoutY="172.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="138.0" visible="false">
+                                       <font>
+                                          <Font name="Microsoft JhengHei" size="11.0" />
+                                       </font>
+                                    </Button>
+                                    <RadioButton fx:id="P3RadioBtn11" disable="true" layoutX="7.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn12" disable="true" layoutX="25.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn13" disable="true" layoutX="43.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn21" disable="true" layoutX="7.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn22" disable="true" layoutX="25.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn23" disable="true" layoutX="43.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn31" disable="true" layoutX="7.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn32" disable="true" layoutX="25.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn33" disable="true" layoutX="43.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn41" disable="true" layoutX="138.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn42" disable="true" layoutX="156.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn43" disable="true" layoutX="174.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn71" disable="true" layoutX="276.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn72" disable="true" layoutX="294.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn73" disable="true" layoutX="312.0" layoutY="67.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn51" disable="true" layoutX="138.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn52" disable="true" layoutX="156.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn53" disable="true" layoutX="174.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn61" disable="true" layoutX="138.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn62" disable="true" layoutX="156.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn63" disable="true" layoutX="174.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="6.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn81" disable="true" layoutX="286.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn82" disable="true" layoutX="304.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn83" disable="true" layoutX="322.0" layoutY="152.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" translateX="-3.0" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn91" disable="true" layoutX="282.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn92" disable="true" layoutX="300.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                    <RadioButton fx:id="P3RadioBtn93" disable="true" layoutX="318.0" layoutY="237.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="4.0" prefWidth="0.0" style="-fx-border-color: black; -fx-border-radius: 10;" visible="false" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="1015.0" layoutY="461.0" maxHeight="180.0" prefHeight="180.0" prefWidth="185.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P2PlantationBtn00" disable="true" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn11" disable="true" layoutX="60.0" layoutY="45.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn01" disable="true" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn02" disable="true" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn12" disable="true" layoutX="60.0" layoutY="104.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn10" disable="true" layoutX="60.0" layoutY="-16.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn22" disable="true" layoutX="120.0" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn20" disable="true" layoutX="120.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P2PlantationBtn21" disable="true" layoutX="120.0" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <GridPane layoutX="12.0" layoutY="1631.0" maxHeight="180.0" prefHeight="180.0" prefWidth="183.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="182.0" prefWidth="216.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+                                 <children>
+                                    <Button fx:id="P3PlantationBtn00" disable="true" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn11" disable="true" layoutX="60.0" layoutY="45.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn01" disable="true" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn02" disable="true" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn12" disable="true" layoutX="60.0" layoutY="104.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn10" disable="true" layoutX="60.0" layoutY="-16.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn22" disable="true" layoutX="120.0" layoutY="121.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn20" disable="true" layoutX="120.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                    <Button fx:id="P3PlantationBtn21" disable="true" layoutX="120.0" layoutY="61.0" mnemonicParsing="false" onAction="#addRemoveColonist" prefHeight="60.0" prefWidth="61.0">
+                                       <font>
+                                          <Font name="Microsoft YaHei" size="11.0" />
+                                       </font></Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <Text layoutX="173.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOUBLOONS" textAlignment="CENTER" wrappingWidth="83.35662841796875">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="249.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORY POINTS" textAlignment="CENTER" wrappingWidth="107.35665893554688">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="358.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLONISTS" textAlignment="CENTER" wrappingWidth="76.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1164.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOUBLOONS" textAlignment="CENTER" wrappingWidth="82.35662841796875">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1240.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORY POINTS" textAlignment="CENTER" wrappingWidth="107.35665893554688">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="1347.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLONISTS" textAlignment="CENTER" wrappingWidth="76.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="187.0" layoutY="1260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOUBLOONS" textAlignment="CENTER" wrappingWidth="82.35662841796875">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="263.0" layoutY="1253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VICTORY POINTS" textAlignment="CENTER" wrappingWidth="107.35665893554688">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text layoutX="371.0" layoutY="1260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLONISTS" textAlignment="CENTER" wrappingWidth="76.95663452148438">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Text>
+                        <Text fx:id="P1Doubloons" layoutX="180.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P1VP" layoutX="274.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P1Colonists" layoutX="363.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P2Doubloons" layoutX="1172.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P2VP" layoutX="1266.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P2Colonists" layoutX="1355.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P3Doubloons" layoutX="198.0" layoutY="1230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P3VP" layoutX="286.0" layoutY="1231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="P3Colonists" layoutX="382.0" layoutY="1229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="doubloonsBank" layoutX="41.0" layoutY="862.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="VPBank" layoutX="135.0" layoutY="862.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="59.26881408691406" />
+                        <Text fx:id="colonistsBank" layoutX="225.0" layoutY="862.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="68.86878967285156" />
+                        <ImageView fx:id="P1Governor" fitHeight="45.0" fitWidth="46.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" visible="false">
+                           <image>
+                              <Image url="@images/carte_gouverneur1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="P2Governor" fitHeight="45.0" fitWidth="46.0" layoutX="1010.0" layoutY="90.0" pickOnBounds="true" visible="false">
+                           <image>
+                              <Image url="@images/carte_gouverneur1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="P3Governor" fitHeight="45.0" fitWidth="46.0" layoutX="10.0" layoutY="1245.0" pickOnBounds="true" visible="false">
+                           <image>
+                              <Image url="@images/carte_gouverneur1.png" />
+                           </image>
+                        </ImageView>
+                        <TextArea editable="false" layoutX="965.0" layoutY="1156.0" prefHeight="60.0" prefWidth="186.0" style="-fx-background-color: #a4a4a4;" text="Corn = 0&#9;    &#9;  Indigo = 1&#10;Sugar = 2&#9;   &#9;  Tobacco = 3&#10;Coffee = 4" wrapText="true">
+                           <font>
+                              <Font name="Cambria Math" size="12.0" />
+                           </font></TextArea>
+                        <Button fx:id="tradeBtn1" layoutX="1019.0" layoutY="1091.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="30.0" style="-fx-opacity: 0.8; -fx-background-color: #a4a4a4; -fx-border-color: white;" textFill="#ff00ff" />
+                        <Button fx:id="tradeBtn2" layoutX="1048.0" layoutY="1091.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-opacity: 0.8; -fx-background-color: #a4a4a4; -fx-border-color: white;" />
+                        <Button fx:id="tradeBtn3" layoutX="1019.0" layoutY="1118.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-opacity: 0.8; -fx-background-color: #a4a4a4; -fx-border-color: white;" />
+                        <Button fx:id="tradeBtn4" layoutX="1048.0" layoutY="1118.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="30.0" style="-fx-opacity: 0.8; -fx-background-color: #a4a4a4; -fx-border-color: white;" />
+                        <Text fill="YELLOW" layoutX="1041.0" layoutY="1169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⬤" />
+                        <Text fill="#efefd6" layoutX="1041.0" layoutY="1186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⬤" />
+                        <Text layoutX="1041.0" layoutY="1203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⬤" />
+                        <Text fill="CORNFLOWERBLUE" layoutX="1138.0" layoutY="1171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⬤" />
+                        <Text fill="BROWN" layoutX="1138.0" layoutY="1186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⬤" />
+                        <Button fx:id="ship1Btn" layoutX="448.0" layoutY="1047.0" mnemonicParsing="false" onAction="#chooseShip" prefHeight="8.0" prefWidth="94.0" style="-fx-opacity: 0.8;" text="???">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="ship2Btn" layoutX="554.0" layoutY="1047.0" mnemonicParsing="false" onAction="#chooseShip" prefHeight="11.0" prefWidth="94.0" style="-fx-opacity: 0.8;" text="???" translateX="-4.0">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="ship3Btn" layoutX="652.0" layoutY="1047.0" mnemonicParsing="false" onAction="#chooseShip" prefHeight="0.0" prefWidth="94.0" style="-fx-opacity: 0.8;" text="???">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Button>
+                        <Pane layoutX="301.0" layoutY="463.0" prefHeight="70.0" prefWidth="126.0" visible="false">
+                           <children>
+                              <Button fx:id="P1smWarehouseNum" layoutX="83.0" layoutY="37.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                              <Text layoutX="1.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="small warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P1smWarehouseType" layoutX="4.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Line endX="100.0" layoutX="9.0" layoutY="30.0" startX="-5.0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="303.0" layoutY="537.0" prefHeight="92.0" prefWidth="114.0" visible="false">
+                           <children>
+                              <Text layoutX="5.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="large warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P1lgWarehouseType1" layoutX="6.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Text fx:id="P1lgWarehouseType2" layoutX="6.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Line endX="93.4000244140625" endY="3.0517578125E-5" layoutX="12.0" layoutY="31.0" startX="-5.0" />
+                              <Button fx:id="P1lgWarehouseNum1" layoutX="74.0" layoutY="33.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                              <Button fx:id="P1lgWarehouseNum2" layoutX="74.0" layoutY="64.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="1301.0" layoutY="432.0" prefHeight="69.0" prefWidth="120.0" visible="false">
+                           <children>
+                              <Text layoutX="3.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="small warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P2smWarehouseType" layoutX="6.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Line endX="100.0" layoutX="11.0" layoutY="32.0" startX="-5.0" />
+                              <Button fx:id="P2smWarehouseNum" layoutX="73.0" layoutY="36.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="1301.0" layoutY="498.0" prefHeight="99.0" prefWidth="114.0" visible="false">
+                           <children>
+                              <Text layoutX="5.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="large warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P2lgWarehouseType1" layoutX="6.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Text fx:id="P2lgWarehouseType2" layoutX="6.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Line endX="93.4000244140625" endY="3.0517578125E-5" layoutX="12.0" layoutY="31.0" startX="-5.0" />
+                              <Button fx:id="P2lgWarehouseNum1" layoutX="74.0" layoutY="33.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                              <Button fx:id="P2lgWarehouseNum2" layoutX="74.0" layoutY="64.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="294.0" layoutY="1616.0" prefHeight="56.0" prefWidth="116.0" visible="false">
+                           <children>
+                              <Text layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="small warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P3smWarehouseType" layoutX="3.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" wrappingWidth="58.93670654296875" />
+                              <Line endX="100.0" layoutX="8.0" layoutY="18.0" startX="-5.0" />
+                              <Button fx:id="P3smWarehouseNum" layoutX="70.0" layoutY="22.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="wharfPane" layoutX="754.0" layoutY="1016.0" prefHeight="154.0" prefWidth="123.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="148.0" fitWidth="93.0" layoutX="19.0" layoutY="3.0" pickOnBounds="true" style="-fx-opacity: 0.6;">
+                                 <image>
+                                    <Image url="@images/36430535-colored-vintage-sailing-ship-at-sea-and-the-sky.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button id="wharf" fx:id="wharfShipBtn" layoutX="19.0" layoutY="65.0" mnemonicParsing="false" onAction="#chooseShip" prefHeight="8.0" prefWidth="94.0" style="-fx-opacity: 0.8;" text="WHARF" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="noShipBtn" disable="true" layoutX="749.0" layoutY="1171.0" mnemonicParsing="false" onAction="#chooseShip" prefHeight="0.0" prefWidth="94.0" style="-fx-opacity: 0.8;" text="No ship">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font></Button>
+                        <Pane layoutX="295.0" layoutY="1679.0" prefHeight="82.0" prefWidth="114.0" visible="false">
+                           <children>
+                              <Text layoutX="2.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="large warehouse" textAlignment="CENTER" wrappingWidth="93.33673095703125" />
+                              <Text fx:id="P3lgWarehouseType1" layoutX="-3.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" textAlignment="CENTER" wrappingWidth="58.93670654296875" />
+                              <Text fx:id="P3lgWarehouseType2" layoutX="-3.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="???" textAlignment="CENTER" wrappingWidth="58.93670654296875" />
+                              <Line endX="93.4000244140625" endY="3.0517578125E-5" layoutX="9.0" layoutY="16.0" startX="-5.0" />
+                              <Button fx:id="P3lgWarehouseNum1" layoutX="71.0" layoutY="18.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                              <Button fx:id="P3lgWarehouseNum2" layoutX="71.0" layoutY="49.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" text="0" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="endTurnBtn" disable="true" layoutX="681.0" layoutY="743.0" mnemonicParsing="false" onAction="#endPlayerTurn" prefHeight="42.0" prefWidth="82.0" text="End Turn" textAlignment="CENTER">
+                           <font>
+                              <Font name="Century" size="13.0" />
+                           </font></Button>
+                        <Text layoutX="660.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn:" wrappingWidth="58.13671875">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="turnInfoText" fill="#f70000" layoutX="549.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a role!" textAlignment="CENTER" wrappingWidth="366.93670654296875">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="playerTurnText" layoutX="718.0" layoutY="667.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="270.13671875">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="colonistShip" layoutX="903.0" layoutY="1122.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="32.956573486328125">
+                           <font>
+                              <Font name="Century" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text id="settlerBtn" fx:id="settlerBonusDoubloon" layoutX="495.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text id="builderBtn" fx:id="builderBonusDoubloon" layoutX="601.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text id="mayorBtn" fx:id="mayorBonusDoubloon" layoutX="709.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text id="craftsmanBtn" fx:id="craftsmanBonusDoubloon" layoutX="816.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text id="traderBtn" fx:id="traderBonusDoubloon" layoutX="924.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text id="captainBtn" fx:id="captainBonusDoubloon" layoutX="1030.0" layoutY="860.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Century" size="15.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="plantationBtn4" layoutX="1331.0" layoutY="915.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Coffee&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="plantationBtn5" layoutX="1393.0" layoutY="915.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Coffee&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="plantationBtn6" layoutX="1269.0" layoutY="975.0" mnemonicParsing="false" onAction="#plantationClicked" prefHeight="60.0" prefWidth="61.0" text="Coffee&#10;&#10;〇">
+                           <font>
+                              <Font name="Microsoft YaHei" size="11.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="chatMessageTextField" focusTraversable="false" layoutX="552.0" layoutY="1454.0" prefHeight="26.0" prefWidth="338.0" />
+                        <Button fx:id="sendMessageBtn" layoutX="895.0" layoutY="1454.0" mnemonicParsing="false" onAction="#sendChatMessage" text="Send" />
+                        <TextArea fx:id="chatTextArea" editable="false" focusTraversable="false" layoutX="551.0" layoutY="1248.0" prefHeight="200.0" prefWidth="384.0" />
+                        <Label fx:id="lastGameMoveLabel" alignment="CENTER" contentDisplay="TOP" layoutX="507.0" layoutY="619.0" prefHeight="21.0" prefWidth="450.0" text="Last move: ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

@@ -1,0 +1,7 @@
+rmi.host = localhost
+rmi.port = 1099
+rmi.remote_object_name = hr.tvz.rmi.service
+server.player_one_port = 1990
+server.player_two_port = 1989
+server.player_three_port = 1991
+server.host = localhost

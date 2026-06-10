@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Documentation</title>
+</head>
+<body>
+<h1>List of classes</h1>
+<h2>public hr.java.game.puertorico.chat.ChatServer</h2>
+<h2>Variables</h2>
+<p>public static final int RANDOM_PORT_HINT</p>
+<h2>Functions</h2>
+<p>public static void main(String[] arg0)</p>
+<h2>Constructors</h2>
+<p>public ChatServer()</p>
+__________________________________________________________________________________________________
+<h2>public abstract interface hr.java.game.puertorico.chat.ChatService</h2>
+<h2>Variables</h2>
+<p>public static final String REMOTE_OBJECT_NAME</p>
+<h2>Functions</h2>
+<p>public abstract void sendChatMessage(String arg0)</p>
+<p>public abstract List< java.lang.String> returnChatHistory()</p>
+<h2>Constructors</h2>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.chat.ChatServiceImpl</h2>
+<h2>Variables</h2>
+<p>private List< java.lang.String> chatMessagesHistory</p>
+<h2>Functions</h2>
+<p>public void sendChatMessage(String arg0)</p>
+<p>public List< java.lang.String> returnChatHistory()</p>
+<h2>Constructors</h2>
+<p>public ChatServiceImpl()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.exception.WrongPlayerNameException</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<h2>Constructors</h2>
+<p>public WrongPlayerNameException(String arg0, Throwable arg1, boolean arg2, boolean arg3)</p>
+<p>public WrongPlayerNameException(Throwable arg0)</p>
+<p>public WrongPlayerNameException(String arg0, Throwable arg1)</p>
+<p>public WrongPlayerNameException(String arg0)</p>
+<p>public WrongPlayerNameException()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.jndi.ConfigurationReader</h2>
+<h2>Variables</h2>
+<p>private static final String PROVIDER_URL</p>
+<h2>Functions</h2>
+<p>public static String getValue(ConfigurationKey arg0)</p>
+<p>private static Hashtable< ?, ?> configureEnvironment()</p>
+<h2>Constructors</h2>
+<p>public ConfigurationReader()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.jndi.InitialDirContextCloseable</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<h2>Constructors</h2>
+<p>public InitialDirContextCloseable(Hashtable arg0)</p>
+__________________________________________________________________________________________________
+<h2>public final hr.java.game.puertorico.model.BankMapKeys</h2>
+<h2>Variables</h2>
+<p>public static final BankMapKeys VP</p><p>public static final BankMapKeys DOUBLOONS</p><p>public static final BankMapKeys COLONISTS</p><p>private String bankString</p><p>private static final BankMapKeys[] $VALUES</p>
+<h2>Functions</h2>
+<p>public static BankMapKeys[] values()</p>
+<p>public static BankMapKeys valueOf(String arg0)</p>
+<p>private static BankMapKeys[] $values()</p>
+<p>public String getBankString()</p>
+<h2>Constructors</h2>
+<p>private BankMapKeys(String arg0, int arg1, String arg2)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Building</h2>
+<h2>Variables</h2>
+<p>private Button buildingToPlace</p><p>private Player player</p><p>private Text gameColonist</p>
+<h2>Functions</h2>
+<p>public static boolean isLargeBuilding(Button arg0)</p>
+<p>public void universityBonus(Text arg0, Player arg1, int arg2)</p>
+<p>public boolean placeLargeBuilding(Button arg0, Player arg1, int arg2, int arg3, int arg4)</p>
+<p>public static int getVP(Button arg0)</p>
+<p>public int returnCost(Button arg0, int arg1, int arg2)</p>
+<p>public static boolean availableEmptyBuildingSpace(Button[][] arg0)</p>
+<p>public static boolean availableEmptyColonistSpace(RadioButton[][] arg0, Button[][] arg1)</p>
+<p>public boolean placeNewBuildingToPlayer()</p>
+<p>public static int addVictoryPointsOfBuildings(Player[] arg0)</p>
+<p>public int returnNumOfColonists(String arg0)</p>
+<p>public boolean placeNormalBuilding(Button arg0, Player arg1, int arg2, int arg3, int arg4)</p>
+<p>public static String buildingType(String arg0)</p>
+<h2>Constructors</h2>
+<p> Building(Button arg0, Player arg1, Text arg2)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Captain</h2>
+<h2>Variables</h2>
+<p> String goodToSell</p><p> TextField[] ships</p><p> int VPBank</p><p> Player p</p>
+<h2>Functions</h2>
+<p>public static boolean clickedShip(Button arg0, Player arg1, Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg2, Text arg3, Text arg4, Button arg5)</p>
+<p>public static void removePlayerGoods(String arg0, Map< java.lang.String, javafx.scene.control.TextField> arg1, List< java.lang.String> arg2, Button[] arg3, Map< java.lang.String, java.lang.Integer> arg4)</p>
+<p>public static boolean isCaptainPhaseCompleted(Map< java.lang.String, java.lang.Integer> arg0, boolean arg1)</p>
+<p>public static int playerGoodsDelivery(String arg0, TextField[] arg1, int arg2, Player arg3)</p>
+<p>public static boolean checkIfPlayerCanLoadGoods(Player arg0, Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg1)</p>
+<h2>Constructors</h2>
+<p> Captain(String arg0, TextField[] arg1, int arg2, Player arg3)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Colonist</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static void setColonistValues(Player arg0)</p>
+<p>public static void disableColonistButtons(RadioButton[][] arg0, Button[][] arg1, boolean arg2)</p>
+<p>public static void distributePlantColonist(Button arg0, Player arg1)</p>
+<p>public static void distributeBuildColonist(RadioButton arg0, Player arg1)</p>
+<p>public static void disableUnselectedButtonsIfNoColonists(RadioButton[][] arg0, int arg1)</p>
+<p>public static int returnNumOfBuildingsWithNoColonists(RadioButton[][] arg0)</p>
+<p>public static int returnNumOfBuildingsAndPlantationsWithNoColonists(RadioButton[][] arg0, Button[][] arg1)</p>
+<h2>Constructors</h2>
+<p>public Colonist()</p>
+__________________________________________________________________________________________________
+<h2>public final hr.java.game.puertorico.model.ConfigurationKey</h2>
+<h2>Variables</h2>
+<p>public static final ConfigurationKey RMI_HOST</p><p>public static final ConfigurationKey RMI_PORT</p><p>public static final ConfigurationKey PLAYER_ONE_SERVER_PORT</p><p>public static final ConfigurationKey PLAYER_TWO_SERVER_PORT</p><p>public static final ConfigurationKey PLAYER_THREE_SERVER_PORT</p><p>public static final ConfigurationKey HOST</p><p>public static final ConfigurationKey REMOTE_OBJECT_NAME</p><p>private String key</p><p>private static final ConfigurationKey[] $VALUES</p>
+<h2>Functions</h2>
+<p>public static ConfigurationKey[] values()</p>
+<p>public static ConfigurationKey valueOf(String arg0)</p>
+<p>public String getKey()</p>
+<p>private static ConfigurationKey[] $values()</p>
+<h2>Constructors</h2>
+<p>private ConfigurationKey(String arg0, int arg1, String arg2)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Constants</h2>
+<h2>Variables</h2>
+<p>public static final String SAVE_GAME_PATH</p><p>public static final Integer NUMOFBUILDINGS</p><p>public static final Integer NUM_OF_BUILDING_TYPES</p><p>public static final Integer NUM_OF_RADIO_BUTTONS_PER_BUILDING</p><p>public static final Integer PLANTATION_ROWS</p><p>public static final Integer PLANTATION_COLUMNS</p><p>public static final Integer BUILDING_COLUMNS</p><p>public static final Integer BUILDING_ROWS</p><p>public static final Integer TRADING_HOUSE</p><p>public static final Integer NUM_OF_GOODS</p><p>public static final Integer NUM_OF_ROLES</p><p>public static final Integer NUM_OF_PLANTATIONS</p><p>public static final int numOfPlayers</p><p>public static final Map< java.lang.String, java.lang.Integer> goodsPrice</p>
+<h2>Functions</h2>
+<h2>Constructors</h2>
+<p>public Constants()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Craftsman</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static void resetGoodsInWindrose(Player arg0)</p>
+<p>public static void producePlayerGoods(Player arg0, Map< java.lang.String, javafx.scene.control.TextField> arg1, int arg2, int[] arg3, int[] arg4)</p>
+<p>public static void chooseGoodForBonusCraftsmanRole(Player arg0, Map< java.lang.String, javafx.scene.control.TextField> arg1, int[] arg2, int[] arg3)</p>
+<p>public static int numberOfPlayerGoods(Player arg0)</p>
+<p>public static List< java.lang.String> goodsAvailableForBonus(Player arg0, Map< java.lang.String, javafx.scene.control.TextField> arg1, int[] arg2, int[] arg3)</p>
+<h2>Constructors</h2>
+<p>public Craftsman()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameFileManager</h2>
+<h2>Variables</h2>
+<p>private Player[] playersList</p><p>private Boolean endRound</p><p>private Boolean gameEnd</p><p>private ImageView[] governorImage</p><p>private Map< java.lang.String, javafx.scene.control.TextField> stockOfGoods</p><p>private Text[] rolesBonusDoubloons</p><p>private Button[] roles</p><p>private Button[] tradeBtns</p><p>private Button[] plantations</p><p>private Button quarryBtn</p><p>private Button endTurnBtn</p><p>private Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> buttonToShipMap</p><p>private Map< java.lang.String, javafx.scene.text.Text> bank</p><p>private Text turnInfoText</p><p>private Text playerTurnText</p><p>private Text colonistShip</p>
+<h2>Functions</h2>
+<p>public void loadSavedGame()</p>
+<p>public void saveGame()</p>
+<p>public static void replayGame()</p>
+<p>public void loadGame(GameState arg0)</p>
+<p>public void loadCurrentGame(GameState arg0)</p>
+<h2>Constructors</h2>
+<p>public GameFileManager()</p>
+<p>public GameFileManager(Player[] arg0, Boolean arg1, Boolean arg2, ImageView[] arg3, Map arg4, Text[] arg5, Button[] arg6, Button[] arg7, Button[] arg8, Button arg9, Button arg10, Map arg11, Map arg12, Text arg13, Text arg14, Text arg15)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameMove</h2>
+<h2>Variables</h2>
+<p>private String role</p><p>private String buttonType</p><p>private Integer positionX</p><p>private Integer positionY</p><p>private LocalDateTime localDateTime</p><p>private String buttonChangedText</p><p>private Integer buttonChangedPositionX</p><p>private Integer buttonChangedPositionY</p><p>private Integer playerTurn</p><p>private Boolean selected</p>
+<h2>Functions</h2>
+<p>public boolean equals(Object arg0)</p>
+<p>public String toString()</p>
+<p>public int hashCode()</p>
+<p>public Boolean getSelected()</p>
+<p>public Integer getButtonChangedPositionY()</p>
+<p>public Integer getButtonChangedPositionX()</p>
+<p>public void setButtonChangedPositionX(Integer arg0)</p>
+<p>public void setButtonChangedText(String arg0)</p>
+<p>public void setButtonChangedPositionY(Integer arg0)</p>
+<p>protected boolean canEqual(Object arg0)</p>
+<p>public String getButtonChangedText()</p>
+<p>public String getRole()</p>
+<p>public void setRole(String arg0)</p>
+<p>public void setSelected(Boolean arg0)</p>
+<p>public Integer getPlayerTurn()</p>
+<p>public void setPlayerTurn(Integer arg0)</p>
+<p>public Integer getPositionX()</p>
+<p>public Integer getPositionY()</p>
+<p>public String getButtonType()</p>
+<p>public LocalDateTime getLocalDateTime()</p>
+<p>public void setLocalDateTime(LocalDateTime arg0)</p>
+<p>public void setButtonType(String arg0)</p>
+<p>public void setPositionY(Integer arg0)</p>
+<p>public void setPositionX(Integer arg0)</p>
+<h2>Constructors</h2>
+<p>public GameMove()</p>
+<p>public GameMove(String arg0, String arg1, Integer arg2, Integer arg3, LocalDateTime arg4, String arg5, Integer arg6, Integer arg7, Integer arg8, Boolean arg9)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameReset</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static void resetGame(Map< java.lang.String, javafx.scene.text.Text> arg0, Player[] arg1, Button[] arg2, Text arg3, ImageView[] arg4, Text arg5, Text arg6, Button arg7, Button arg8, Button[] arg9, Button[] arg10, Text[] arg11, Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg12)</p>
+<p>public static void resetPlayerColonistValues(Player arg0)</p>
+<p>public static void resetRoles(Button[] arg0, Text[] arg1)</p>
+<p>public static void resetPlayerBuildings(Button[][] arg0)</p>
+<p>public static void resetPlayerPlantations(Button[][] arg0)</p>
+<p>public static void resetBuildingRadioButtons(RadioButton[][] arg0)</p>
+<h2>Constructors</h2>
+<p>public GameReset()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameSession</h2>
+<h2>Variables</h2>
+<p>private ChatService stub</p><p>private Label lastGameMoveLabel</p><p>private TextArea chatTextArea</p>
+<h2>Functions</h2>
+<p>public ChatService setupChatThread()</p>
+<p>public void setupGameMoveThread()</p>
+<p>private void refreshChatTextArea()</p>
+<h2>Constructors</h2>
+<p>public GameSession(Label arg0, TextArea arg1)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameSetup</h2>
+<h2>Variables</h2>
+<p>public static Integer numOfQuarryTiles</p><p>public static Map< java.lang.String, java.lang.Integer> islandTilesMap</p><p>public static Map< java.lang.String, java.lang.Integer> discardedIslandTilesMap</p><p>private static int governor</p>
+<h2>Functions</h2>
+<p>public static int initializeGame(int arg0, Button[] arg1, Player[] arg2, Map< java.lang.String, javafx.scene.text.Text> arg3, Text arg4, Map< java.lang.String, javafx.scene.control.TextField> arg5)</p>
+<p>public static void generateIslandTiles(int arg0, Button[] arg1, boolean arg2)</p>
+<p>public static int nextPlayer(int arg0, int arg1)</p>
+<p>public static void endTurn(int arg0, int arg1, int arg2, Player[] arg3, String arg4)</p>
+<p>public static String randomPlantationPicker()</p>
+<p>private static void updateIslandTilesMap(Button[] arg0, int arg1)</p>
+<p>public static boolean isAnyTileRemaining(Map< java.lang.String, java.lang.Integer> arg0)</p>
+<h2>Constructors</h2>
+<p>public GameSetup()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.GameState</h2>
+<h2>Variables</h2>
+<p>private String[][][] buildingBoardStateText</p><p>private String[][][] buildingBoardStateBackground</p><p>private String[][][] plantationBoardStateText</p><p>private String[][][] plantationBoardStateId</p><p>private String[][][] buildingColonistBoardStateId</p><p>private Boolean[][][] buildingColonistBoardStateSelected</p><p>private Boolean[][][] buildingColonistBoardStateVisible</p><p>private String[][] playerGoods</p><p>private Integer[] playerDoubloons</p><p>private Integer[] playerVP</p><p>private Integer[] playerColonists</p><p>private Integer[] builderDiscount</p><p>private Boolean[] traderBonus</p><p>private Boolean[] soldGood</p><p>private Boolean[] captainShippedGoodTurn</p><p>private Boolean[] goodsRemoved</p><p>private Boolean[] didPlayerTrade</p><p>private Boolean[] settlerTurnOver</p><p>private Boolean[] haciendaBonusUsed</p><p>private Boolean[] governorImageVisibility</p><p>private Boolean[] didPlayerTakeQuarry</p><p>private String VPBank</p><p>private String doubloonsBank</p><p>private String colonistsBank</p><p>private String[] stockOfGoods</p><p>private Map< java.lang.String, java.lang.Integer> islandTilesMap</p><p>private Map< java.lang.String, java.lang.Integer> discardedIslandTilesMap</p><p>private List< java.lang.String> usedRoles</p><p>private String[] rolesBonusDoubloons</p><p>private Boolean[] rolesStateDisabled</p><p>private Map< java.lang.String, java.lang.Integer> rolesBonus</p><p>private String[] tradeBtnsStateText</p><p>private String[] tradeBtnsStateId</p><p>private String[] tradeBtnsStateStyle</p><p>private List< java.lang.String[]> captainShips</p><p>private String[] captainShipBtns</p><p>private Boolean quarryBtnDisabled</p><p>private Boolean endTurnBtn</p><p>private String colonistShipValue</p><p>private String[] plantationsText</p><p>private String[] plantationsId</p><p>private Boolean[] plantationsDisabled</p><p>private String role</p><p>private String turnInfoText</p><p>private String playerTurnText</p><p>private Integer governor</p><p>private Integer playerTurn</p><p>private Integer numOfBuildingsAndPlantationsAPlayerCanSelect</p><p>private Boolean endRound</p><p>private Boolean gameEnd</p>
+<h2>Functions</h2>
+<p>public boolean equals(Object arg0)</p>
+<p>public String toString()</p>
+<p>public int hashCode()</p>
+<p>protected boolean canEqual(Object arg0)</p>
+<p>public String getVPBank()</p>
+<p>public void setVPBank(String arg0)</p>
+<p>public Boolean[] getDidPlayerTakeQuarry()</p>
+<p>public void setBuildingBoardStateText(String[][][] arg0)</p>
+<p>public String[][][] getBuildingBoardStateText()</p>
+<p>public Boolean[] getHaciendaBonusUsed()</p>
+<p>public Map< java.lang.String, java.lang.Integer> getDiscardedIslandTilesMap()</p>
+<p>public Boolean[] getRolesStateDisabled()</p>
+<p>public String[][][] getPlantationBoardStateId()</p>
+<p>public Boolean[] getPlantationsDisabled()</p>
+<p>public String[] getRolesBonusDoubloons()</p>
+<p>public String[] getTradeBtnsStateText()</p>
+<p>public String getColonistShipValue()</p>
+<p>public void setPlantationBoardStateId(String[][][] arg0)</p>
+<p>public String[] getTradeBtnsStateId()</p>
+<p>public Boolean[] getGovernorImageVisibility()</p>
+<p>public String[] getTradeBtnsStateStyle()</p>
+<p>public Boolean getQuarryBtnDisabled()</p>
+<p>public Boolean[] getCaptainShippedGoodTurn()</p>
+<p>public void setRolesStateDisabled(Boolean[] arg0)</p>
+<p>public void setGovernorImageVisibility(Boolean[] arg0)</p>
+<p>public void setQuarryBtnDisabled(Boolean arg0)</p>
+<p>public void setRolesBonusDoubloons(String[] arg0)</p>
+<p>public void setTradeBtnsStateStyle(String[] arg0)</p>
+<p>public void setTradeBtnsStateText(String[] arg0)</p>
+<p>public void setColonistShipValue(String arg0)</p>
+<p>public void setPlantationsDisabled(Boolean[] arg0)</p>
+<p>public void setTradeBtnsStateId(String[] arg0)</p>
+<p>public void setDiscardedIslandTilesMap(Map< java.lang.String, java.lang.Integer> arg0)</p>
+<p>public Boolean getGameEnd()</p>
+<p>public String getRole()</p>
+<p>public void setRole(String arg0)</p>
+<p>public void setGameEnd(Boolean arg0)</p>
+<p>public Integer[] getBuilderDiscount()</p>
+<p>public void setSoldGood(Boolean[] arg0)</p>
+<p>public void setGoodsRemoved(Boolean[] arg0)</p>
+<p>public void setBuilderDiscount(Integer[] arg0)</p>
+<p>public void setDidPlayerTrade(Boolean[] arg0)</p>
+<p>public void setTraderBonus(Boolean[] arg0)</p>
+<p>public void setSettlerTurnOver(Boolean[] arg0)</p>
+<p>public Map< java.lang.String, java.lang.Integer> getIslandTilesMap()</p>
+<p>public String[] getCaptainShipBtns()</p>
+<p>public void setPlayerDoubloons(Integer[] arg0)</p>
+<p>public void setRolesBonus(Map< java.lang.String, java.lang.Integer> arg0)</p>
+<p>public void setPlayerGoods(String[][] arg0)</p>
+<p>public String[] getPlantationsText()</p>
+<p>public void setCaptainShipBtns(String[] arg0)</p>
+<p>public Integer getPlayerTurn()</p>
+<p>public Boolean[] getSoldGood()</p>
+<p>public void setGovernor(Integer arg0)</p>
+<p>public void setPlantationsId(String[] arg0)</p>
+<p>public Boolean[] getDidPlayerTrade()</p>
+<p>public Integer[] getPlayerColonists()</p>
+<p>public void setCaptainShips(List< java.lang.String[]> arg0)</p>
+<p>public Boolean getEndRound()</p>
+<p>public Integer[] getPlayerVP()</p>
+<p>public Boolean[] getSettlerTurnOver()</p>
+<p>public void setPlayerVP(Integer[] arg0)</p>
+<p>public void setPlantationsText(String[] arg0)</p>
+<p>public Integer getGovernor()</p>
+<p>public Boolean[] getTraderBonus()</p>
+<p>public void setPlayerTurn(Integer arg0)</p>
+<p>public String[] getPlantationsId()</p>
+<p>public Map< java.lang.String, java.lang.Integer> getRolesBonus()</p>
+<p>public String[] getStockOfGoods()</p>
+<p>public void setStockOfGoods(String[] arg0)</p>
+<p>public void setIslandTilesMap(Map< java.lang.String, java.lang.Integer> arg0)</p>
+<p>public void setPlayerColonists(Integer[] arg0)</p>
+<p>public Integer[] getPlayerDoubloons()</p>
+<p>public void setUsedRoles(List< java.lang.String> arg0)</p>
+<p>public Boolean[] getGoodsRemoved()</p>
+<p>public String[][] getPlayerGoods()</p>
+<p>public void setEndRound(Boolean arg0)</p>
+<p>public List< java.lang.String> getUsedRoles()</p>
+<p>public List< java.lang.String[]> getCaptainShips()</p>
+<p>public void setColonistsBank(String arg0)</p>
+<p>public void setTurnInfoText(String arg0)</p>
+<p>public void setDoubloonsBank(String arg0)</p>
+<p>public void setPlayerTurnText(String arg0)</p>
+<p>public Boolean getEndTurnBtn()</p>
+<p>public String getColonistsBank()</p>
+<p>public String getTurnInfoText()</p>
+<p>public String getPlayerTurnText()</p>
+<p>public String getDoubloonsBank()</p>
+<p>public void setEndTurnBtn(Boolean arg0)</p>
+<p>public void convertStringValuesToPlayer(Player[] arg0)</p>
+<p>public String[][][] getBuildingBoardStateBackground()</p>
+<p>public void setBuildingBoardStateBackground(String[][][] arg0)</p>
+<p>public void setPlantationBoardStateText(String[][][] arg0)</p>
+<p>public String[][][] getPlantationBoardStateText()</p>
+<p>public String[][][] getBuildingColonistBoardStateId()</p>
+<p>public void setBuildingColonistBoardStateId(String[][][] arg0)</p>
+<p>public void convertPlayerValuesToString(Player[] arg0)</p>
+<p>public void setCaptainShippedGoodTurn(Boolean[] arg0)</p>
+<p>public void setDidPlayerTakeQuarry(Boolean[] arg0)</p>
+<p>public void setHaciendaBonusUsed(Boolean[] arg0)</p>
+<p>public Boolean[][][] getBuildingColonistBoardStateVisible()</p>
+<p>public Boolean[][][] getBuildingColonistBoardStateSelected()</p>
+<p>public void setBuildingColonistBoardStateVisible(Boolean[][][] arg0)</p>
+<p>public void setBuildingColonistBoardStateSelected(Boolean[][][] arg0)</p>
+<p>public Integer getNumOfBuildingsAndPlantationsAPlayerCanSelect()</p>
+<p>public void setNumOfBuildingsAndPlantationsAPlayerCanSelect(Integer arg0)</p>
+<h2>Constructors</h2>
+<p>public GameState(String[][][] arg0, String[][][] arg1, String[][][] arg2, String[][][] arg3, String[][][] arg4, Boolean[][][] arg5, Boolean[][][] arg6, String[][] arg7, Integer[] arg8, Integer[] arg9, Integer[] arg10, Integer[] arg11, Boolean[] arg12, Boolean[] arg13, Boolean[] arg14, Boolean[] arg15, Boolean[] arg16, Boolean[] arg17, Boolean[] arg18, Boolean[] arg19, Boolean[] arg20, String arg21, String arg22, String arg23, String[] arg24, Map arg25, Map arg26, List arg27, String[] arg28, Boolean[] arg29, Map arg30, String[] arg31, String[] arg32, String[] arg33, List arg34, String[] arg35, Boolean arg36, Boolean arg37, String arg38, String[] arg39, String[] arg40, Boolean[] arg41, String arg42, String arg43, String arg44, Integer arg45, Integer arg46, Integer arg47, Boolean arg48, Boolean arg49)</p>
+<p>public GameState()</p>
+<p>public GameState(Player[] arg0, String arg1, Integer arg2, Integer arg3, Boolean arg4, Boolean arg5, Integer arg6, ImageView[] arg7, Map arg8, Map arg9, Map arg10, Map arg11, List arg12, Text[] arg13, Button[] arg14, Map arg15, Button[] arg16, Button arg17, Text arg18, Map arg19, Button arg20, Text arg21, Text arg22, Button[] arg23)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Globals</h2>
+<h2>Variables</h2>
+<p>public static String role</p><p>public static int playerTurn</p><p>public static int governor</p><p>public static int fastGameMultiplier</p><p>public static boolean gameEnd</p><p>public static boolean endRound</p><p>public static int numOfBuildingsAndPlantationsAPlayerCanSelect</p><p>public static Map< java.lang.String, java.lang.Integer> rolesBonus</p>
+<h2>Functions</h2>
+<h2>Constructors</h2>
+<p>public Globals()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Plantation</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static boolean placePlantation(Player arg0, Button arg1, Text arg2)</p>
+<p>public static boolean haciendaBonus(Player arg0, Text arg1)</p>
+<p>public static void hospiceBonus(Text arg0, Player arg1, int arg2, int arg3)</p>
+<h2>Constructors</h2>
+<p>public Plantation()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Player</h2>
+<h2>Variables</h2>
+<p>private Text doubloons</p><p>private Text VP</p><p>private Text colonists</p><p>private Button[][] buildingState</p><p>private Button[][] plantationState</p><p>private Button[] goods</p><p>private RadioButton[][] buildingColonistState</p><p>private Integer cornPlantCol</p><p>private Integer indigoPlantCol</p><p>private Integer coffeePlantCol</p><p>private Integer tobaccoPlantCol</p><p>private Integer sugarPlantCol</p><p>private Integer buildingDiscount</p><p>private Integer extraDoubloonTrade</p><p>private Integer useWharf</p><p>private Integer indigoBuildCol</p><p>private Integer coffeeBuildCol</p><p>private Integer tobaccoBuildCol</p><p>private Integer sugarBuildCol</p><p>private Integer builderDiscount</p><p>private boolean captainShippedGoodTurn</p><p>private boolean goodsRemoved</p><p>private boolean soldGood</p><p>private boolean didPlayerTakeQuarry</p><p>private boolean didPlayerTrade</p><p>private boolean traderBonus</p><p>private boolean settlerTurnOver</p><p>private boolean haciendaBonusUsed</p><p> Map< java.lang.String, java.lang.Boolean> buildingKeyValueMap</p><p>final Map< java.lang.String, java.lang.String> goodsColor</p><p>public Map< java.lang.String, java.lang.Integer> goodsInWindrose</p><p>public String playerName</p>
+<h2>Functions</h2>
+<p>public void setValues(int arg0)</p>
+<p>public boolean equals(Object arg0)</p>
+<p>public String toString()</p>
+<p>public int hashCode()</p>
+<p>public boolean setPlantation(Button arg0, Text arg1)</p>
+<p>public void disableAllButtons()</p>
+<p>public boolean setBuilding(Button arg0, Text arg1)</p>
+<p>public boolean sellGoodTrader(Button arg0, Button[] arg1, Text arg2)</p>
+<p>protected boolean canEqual(Object arg0)</p>
+<p>public void addRemovePlantColonist(Button arg0)</p>
+<p>public boolean availableBuildingSpace()</p>
+<p>public void addRemoveBuildColonist(RadioButton arg0)</p>
+<p>public void increaseVP(Text arg0, int arg1)</p>
+<p>public boolean isSoldGood()</p>
+<p>public Text getVP()</p>
+<p>public Button[] getGoods()</p>
+<p>public void setVP(Text arg0)</p>
+<p>public void setGoods(Button[] arg0)</p>
+<p>public void setVPValue(int arg0)</p>
+<p>public Integer getTobaccoPlantCol()</p>
+<p>public Text getColonists()</p>
+<p>public int getDoubloonsValue()</p>
+<p>public void setDoubloonsValue(int arg0)</p>
+<p>public boolean isDidPlayerTrade()</p>
+<p>public boolean isTraderBonus()</p>
+<p>public boolean isSettlerTurnOver()</p>
+<p>public Integer getTobaccoBuildCol()</p>
+<p>public Text getDoubloons()</p>
+<p>public int getGoodValue(Button arg0)</p>
+<p>public void setGoodValue(Button arg0, int arg1)</p>
+<p>public void setColonistsValue(int arg0)</p>
+<p>public void increaseDoubloon(Text arg0, int arg1)</p>
+<p>public Integer getCornPlantCol()</p>
+<p>public Integer getSugarBuildCol()</p>
+<p>public Integer getBuilderDiscount()</p>
+<p>public String getPlayerName()</p>
+<p>public void produceGoods(Map< java.lang.String, javafx.scene.control.TextField> arg0, int arg1)</p>
+<p>public Integer getSugarPlantCol()</p>
+<p>public void increaseColonists(Text arg0, int arg1)</p>
+<p>public Integer getCoffeeBuildCol()</p>
+<p>public List< java.lang.String> goodsForSale()</p>
+<p>public Map< java.lang.String, java.lang.String> getGoodsColor()</p>
+<p>public void chooseGoodForBonus(Map< java.lang.String, javafx.scene.control.TextField> arg0)</p>
+<p>public void removeGoods(String arg0, Map< java.lang.String, javafx.scene.control.TextField> arg1)</p>
+<p>public Integer getIndigoBuildCol()</p>
+<p>public boolean isGoodsRemoved()</p>
+<p>public Button[][] getPlantationState()</p>
+<p>public void enableButtons(String arg0)</p>
+<p>public Button[][] getBuildingState()</p>
+<p>public Integer getCoffeePlantCol()</p>
+<p>public void captainExtraVP(Text arg0)</p>
+<p>public int getVPIntegerValue()</p>
+<p>public Integer getUseWharf()</p>
+<p>public boolean isBuildingOccupied(String arg0)</p>
+<p>public Map< java.lang.String, java.lang.Integer> getGoodsInWindrose()</p>
+<p>public void setDoubloons(Text arg0)</p>
+<p>public Integer getIndigoPlantCol()</p>
+<p>public void setCornPlantCol(Integer arg0)</p>
+<p>public void setIndigoPlantCol(Integer arg0)</p>
+<p>public void setSoldGood(boolean arg0)</p>
+<p>public void setTobaccoPlantCol(Integer arg0)</p>
+<p>public void setGoodsRemoved(boolean arg0)</p>
+<p>public void setPlayerName(String arg0)</p>
+<p>public void setUseWharf(Integer arg0)</p>
+<p>public void setIndigoBuildCol(Integer arg0)</p>
+<p>public void setBuilderDiscount(Integer arg0)</p>
+<p>public void setBuildingState(Button[][] arg0)</p>
+<p>public void setCoffeePlantCol(Integer arg0)</p>
+<p>public void setTobaccoBuildCol(Integer arg0)</p>
+<p>public void setDidPlayerTrade(boolean arg0)</p>
+<p>public void setPlantationState(Button[][] arg0)</p>
+<p>public void setTraderBonus(boolean arg0)</p>
+<p>public void setSugarPlantCol(Integer arg0)</p>
+<p>public void setSettlerTurnOver(boolean arg0)</p>
+<p>public void setCoffeeBuildCol(Integer arg0)</p>
+<p>public void setSugarBuildCol(Integer arg0)</p>
+<p>public void setColonists(Text arg0)</p>
+<p>public void setGoodsInWindrose(Map< java.lang.String, java.lang.Integer> arg0)</p>
+<p>public int numOfBuildingsWithNoColonists()</p>
+<p>public boolean isDidPlayerTakeQuarry()</p>
+<p>public Integer getBuildingDiscount()</p>
+<p>private void enableDisableBuildColonist()</p>
+<p>public void setGoodValueByIndex(int arg0, int arg1)</p>
+<p>public boolean haveToDistributeColonists()</p>
+<p>public int getColonistsIntegerValue()</p>
+<p>public boolean isHaciendaBonusUsed()</p>
+<p>public Integer getExtraDoubloonTrade()</p>
+<p>public RadioButton[][] getBuildingColonistState()</p>
+<p>public Map< java.lang.String, java.lang.Boolean> getBuildingKeyValueMap()</p>
+<p>public boolean isCaptainShippedGoodTurn()</p>
+<p>public int getGoodValueByIndex(int arg0)</p>
+<p>public void setCaptainShippedGoodTurn(boolean arg0)</p>
+<p>public void setExtraDoubloonTrade(Integer arg0)</p>
+<p>public void setDidPlayerTakeQuarry(boolean arg0)</p>
+<p>public void setHaciendaBonusUsed(boolean arg0)</p>
+<p>public void setBuildingKeyValueMap(Map< java.lang.String, java.lang.Boolean> arg0)</p>
+<p>public int goodsDeliveryCaptain(String arg0, TextField[] arg1, int arg2)</p>
+<p>public void setBuildingColonistState(RadioButton[][] arg0)</p>
+<p>public void setBuildingDiscount(Integer arg0)</p>
+<p>public boolean finishedCaptainPhase()</p>
+<h2>Constructors</h2>
+<p>public Player(String arg0, Text arg1, Text arg2, Text arg3, Button[][] arg4, Button[][] arg5, RadioButton[][] arg6, Button[] arg7)</p>
+__________________________________________________________________________________________________
+<h2>public final hr.java.game.puertorico.model.PlayerName</h2>
+<h2>Variables</h2>
+<p>public static final PlayerName PLAYER_ONE</p><p>public static final PlayerName PLAYER_TWO</p><p>public static final PlayerName PLAYER_THREE</p><p>public static final PlayerName SINGLE_PLAYER</p><p>private static final PlayerName[] $VALUES</p>
+<h2>Functions</h2>
+<p>public static PlayerName[] values()</p>
+<p>public static PlayerName valueOf(String arg0)</p>
+<p>private static PlayerName[] $values()</p>
+<h2>Constructors</h2>
+<p>private PlayerName(String arg0, int arg1)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Roles</h2>
+<h2>Variables</h2>
+<p>private Player[] playersList</p><p>private String role</p><p>private int numOfPlayers</p><p>private int governor</p><p>private Text turnInfoText</p><p>private Map< java.lang.String, javafx.scene.text.Text> bank</p>
+<h2>Functions</h2>
+<p>public String roleClicked(Button arg0, Button arg1, Text arg2, Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg3, Text arg4)</p>
+<p>public void rolesBonus(String arg0, Text[] arg1)</p>
+<p>public void mayorRoleFunction(Text arg0)</p>
+<p>public void traderRoleFunction()</p>
+<p>public void settlerRoleFunction(Button arg0)</p>
+<p>public void captainRoleFunction(Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg0, Text arg1)</p>
+<p>public void craftsmanRoleFunction()</p>
+<p>public void builderRoleFunction()</p>
+<h2>Constructors</h2>
+<p>public Roles(String arg0, Player[] arg1, int arg2, int arg3, Text arg4, Map arg5)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.Trader</h2>
+<h2>Variables</h2>
+<p> Button b</p><p> Button[] tradeBtns</p><p> Player p</p><p> Text doubloonsBank</p>
+<h2>Functions</h2>
+<p>public boolean sellPlayerGood()</p>
+<p>public static List< java.lang.String> goodsThatWereTraded(Button[] arg0)</p>
+<h2>Constructors</h2>
+<p> Trader(Button arg0, Button[] arg1, Player arg2, Text arg3)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.TurnManager</h2>
+<h2>Variables</h2>
+<p>private Text[] rolesBonusDoubloons</p><p>private Button[] roles</p><p>private Button[] plantations</p><p>private Button[] tradeBtns</p><p>private Player[] playersList</p><p>private Map< java.lang.String, javafx.scene.text.Text> bank</p><p>private ImageView[] governorImage</p><p>private Text colonistShip</p><p>private Text playerTurnText</p><p>private Text turnInfoText</p><p>private Button quarryBtn</p><p>private Button endTurnBtn</p><p>private Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> buttonToShipMap</p><p>private TurnManagerCaptainPhase turnManagerCaptainPhase</p>
+<h2>Functions</h2>
+<p>public void gameRestart()</p>
+<p>public void endRound()</p>
+<p>public static void gameEnd()</p>
+<p>public boolean nextTurn()</p>
+<p>public void fillCaptainShipAfterMayorPhase()</p>
+<p>public void resetValuesAndChangePlayerTurn()</p>
+<p>public void resetUsedValuesAfterTraderRole()</p>
+<h2>Constructors</h2>
+<p>public TurnManager(Text[] arg0, Button[] arg1, Button[] arg2, Player[] arg3, Map arg4, Map arg5, Button[] arg6, ImageView[] arg7, Text arg8, Text arg9, Text arg10, Button arg11, Button arg12)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.model.TurnManagerCaptainPhase</h2>
+<h2>Variables</h2>
+<p>private Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> buttonToShipMap</p><p>private Player[] playersList</p><p>private Text VPBank</p>
+<h2>Functions</h2>
+<p>public void endRoundCaptainPhase()</p>
+<p>public boolean nextTurnCaptain(Text arg0)</p>
+<p>public boolean checkIfCaptainRoleIsFullyOver()</p>
+<p>public void resetPlayerCaptainTurnValue(boolean arg0)</p>
+<p>public boolean doesPlayerHaveGoodsToLeave()</p>
+<p>public boolean mustLoadGoods(List< java.lang.String> arg0, boolean arg1)</p>
+<h2>Constructors</h2>
+<p> TurnManagerCaptainPhase(Player[] arg0, Map arg1, Text arg2)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.PuertoRico</h2>
+<h2>Variables</h2>
+<p>public static PlayerName playerName</p>
+<h2>Functions</h2>
+<p>public static void main(String[] arg0)</p>
+<p>public void start(Stage arg0)</p>
+<h2>Constructors</h2>
+<p>public PuertoRico()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.PuertoRicoController</h2>
+<h2>Variables</h2>
+<p>private Button settlerBtn</p><p>private Button builderBtn</p><p>private Button mayorBtn</p><p>private Button craftsmanBtn</p><p>private Button traderBtn</p><p>private Button captainBtn</p><p>private Button prospectorBtn</p><p>private Button endTurnBtn</p><p>private Button smallIndigoBtn</p><p>private Button smallSugarBtn</p><p>private Button smallMarketBtn</p><p>private Button haciendaBtn</p><p>private Button constructionBtn</p><p>private Button smallWarehouseBtn</p><p>private Button indigoBtn</p><p>private Button sugarBtn</p><p>private Button hospiceBtn</p><p>private Button officeBtn</p><p>private Button largeMarketBtn</p><p>private Button largeWarehouseBtn</p><p>private Button tobaccoBtn</p><p>private Button coffeeBtn</p><p>private Button factoryBtn</p><p>private Button universityBtn</p><p>private Button harborBtn</p><p>private Button wharfBtn</p><p>private Button plantationBtn0</p><p>private Button plantationBtn1</p><p>private Button plantationBtn2</p><p>private Button plantationBtn3</p><p>private Button plantationBtn4</p><p>private Button plantationBtn5</p><p>private Button plantationBtn6</p><p>private Button quarryBtn</p><p>private Button P1BuildingBtn00</p><p>private Button P1BuildingBtn01</p><p>private Button P1BuildingBtn02</p><p>private Button P1BuildingBtn03</p><p>private Button P1BuildingBtn10</p><p>private Button P1BuildingBtn11</p><p>private Button P1BuildingBtn12</p><p>private Button P1BuildingBtn13</p><p>private Button P1BuildingBtn20</p><p>private Button P1BuildingBtn21</p><p>private Button P1BuildingBtn22</p><p>private Button P1BuildingBtn23</p><p>private Button P1PlantationBtn00</p><p>private Button P1PlantationBtn01</p><p>private Button P1PlantationBtn02</p><p>private Button P1PlantationBtn10</p><p>private Button P1PlantationBtn11</p><p>private Button P1PlantationBtn12</p><p>private Button P1PlantationBtn20</p><p>private Button P1PlantationBtn21</p><p>private Button P1PlantationBtn22</p><p>private Button P1PlantationBtn30</p><p>private Button P1PlantationBtn31</p><p>private Button P1PlantationBtn32</p><p>private Button P2BuildingBtn00</p><p>private Button P2BuildingBtn01</p><p>private Button P2BuildingBtn02</p><p>private Button P2BuildingBtn03</p><p>private Button P2BuildingBtn10</p><p>private Button P2BuildingBtn11</p><p>private Button P2BuildingBtn12</p><p>private Button P2BuildingBtn13</p><p>private Button P2BuildingBtn20</p><p>private Button P2BuildingBtn21</p><p>private Button P2BuildingBtn22</p><p>private Button P2BuildingBtn23</p><p>private Button P2PlantationBtn00</p><p>private Button P2PlantationBtn01</p><p>private Button P2PlantationBtn02</p><p>private Button P2PlantationBtn10</p><p>private Button P2PlantationBtn11</p><p>private Button P2PlantationBtn12</p><p>private Button P2PlantationBtn20</p><p>private Button P2PlantationBtn21</p><p>private Button P2PlantationBtn22</p><p>private Button P2PlantationBtn30</p><p>private Button P2PlantationBtn31</p><p>private Button P2PlantationBtn32</p><p>private Button P3BuildingBtn00</p><p>private Button P3BuildingBtn01</p><p>private Button P3BuildingBtn02</p><p>private Button P3BuildingBtn03</p><p>private Button P3BuildingBtn10</p><p>private Button P3BuildingBtn11</p><p>private Button P3BuildingBtn12</p><p>private Button P3BuildingBtn13</p><p>private Button P3BuildingBtn20</p><p>private Button P3BuildingBtn21</p><p>private Button P3BuildingBtn22</p><p>private Button P3BuildingBtn23</p><p>private Button P3PlantationBtn00</p><p>private Button P3PlantationBtn01</p><p>private Button P3PlantationBtn02</p><p>private Button P3PlantationBtn10</p><p>private Button P3PlantationBtn11</p><p>private Button P3PlantationBtn12</p><p>private Button P3PlantationBtn20</p><p>private Button P3PlantationBtn21</p><p>private Button P3PlantationBtn22</p><p>private Button P3PlantationBtn30</p><p>private Button P3PlantationBtn31</p><p>private Button P3PlantationBtn32</p><p>private RadioButton P1RadioBtn11</p><p>private RadioButton P1RadioBtn12</p><p>private RadioButton P1RadioBtn13</p><p>private RadioButton P2RadioBtn11</p><p>private RadioButton P2RadioBtn12</p><p>private RadioButton P2RadioBtn13</p><p>private RadioButton P3RadioBtn11</p><p>private RadioButton P3RadioBtn12</p><p>private RadioButton P3RadioBtn13</p><p>private RadioButton P1RadioBtn21</p><p>private RadioButton P1RadioBtn22</p><p>private RadioButton P1RadioBtn23</p><p>private RadioButton P2RadioBtn21</p><p>private RadioButton P2RadioBtn22</p><p>private RadioButton P2RadioBtn23</p><p>private RadioButton P3RadioBtn21</p><p>private RadioButton P3RadioBtn22</p><p>private RadioButton P3RadioBtn23</p><p>private RadioButton P1RadioBtn31</p><p>private RadioButton P1RadioBtn32</p><p>private RadioButton P1RadioBtn33</p><p>private RadioButton P2RadioBtn31</p><p>private RadioButton P2RadioBtn32</p><p>private RadioButton P2RadioBtn33</p><p>private RadioButton P3RadioBtn31</p><p>private RadioButton P3RadioBtn32</p><p>private RadioButton P3RadioBtn33</p><p>private RadioButton P1RadioBtn41</p><p>private RadioButton P1RadioBtn42</p><p>private RadioButton P1RadioBtn43</p><p>private RadioButton P2RadioBtn41</p><p>private RadioButton P2RadioBtn42</p><p>private RadioButton P2RadioBtn43</p><p>private RadioButton P3RadioBtn41</p><p>private RadioButton P3RadioBtn42</p><p>private RadioButton P3RadioBtn43</p><p>private RadioButton P1RadioBtn51</p><p>private RadioButton P1RadioBtn52</p><p>private RadioButton P1RadioBtn53</p><p>private RadioButton P2RadioBtn51</p><p>private RadioButton P2RadioBtn52</p><p>private RadioButton P2RadioBtn53</p><p>private RadioButton P3RadioBtn51</p><p>private RadioButton P3RadioBtn52</p><p>private RadioButton P3RadioBtn53</p><p>private RadioButton P1RadioBtn61</p><p>private RadioButton P1RadioBtn62</p><p>private RadioButton P1RadioBtn63</p><p>private RadioButton P2RadioBtn61</p><p>private RadioButton P2RadioBtn62</p><p>private RadioButton P2RadioBtn63</p><p>private RadioButton P3RadioBtn61</p><p>private RadioButton P3RadioBtn62</p><p>private RadioButton P3RadioBtn63</p><p>private RadioButton P1RadioBtn71</p><p>private RadioButton P1RadioBtn72</p><p>private RadioButton P1RadioBtn73</p><p>private RadioButton P2RadioBtn71</p><p>private RadioButton P2RadioBtn72</p><p>private RadioButton P2RadioBtn73</p><p>private RadioButton P3RadioBtn71</p><p>private RadioButton P3RadioBtn72</p><p>private RadioButton P3RadioBtn73</p><p>private RadioButton P1RadioBtn81</p><p>private RadioButton P1RadioBtn82</p><p>private RadioButton P1RadioBtn83</p><p>private RadioButton P2RadioBtn81</p><p>private RadioButton P2RadioBtn82</p><p>private RadioButton P2RadioBtn83</p><p>private RadioButton P3RadioBtn81</p><p>private RadioButton P3RadioBtn82</p><p>private RadioButton P3RadioBtn83</p><p>private RadioButton P1RadioBtn91</p><p>private RadioButton P1RadioBtn92</p><p>private RadioButton P1RadioBtn93</p><p>private RadioButton P2RadioBtn91</p><p>private RadioButton P2RadioBtn92</p><p>private RadioButton P2RadioBtn93</p><p>private RadioButton P3RadioBtn91</p><p>private RadioButton P3RadioBtn92</p><p>private RadioButton P3RadioBtn93</p><p>private Button P1CornBtn</p><p>private Button P1IndigoBtn</p><p>private Button P1TobaccoBtn</p><p>private Button P1SugarBtn</p><p>private Button P1CoffeeBtn</p><p>private Button P2CornBtn</p><p>private Button P2IndigoBtn</p><p>private Button P2TobaccoBtn</p><p>private Button P2SugarBtn</p><p>private Button P2CoffeeBtn</p><p>private Button P3CornBtn</p><p>private Button P3IndigoBtn</p><p>private Button P3TobaccoBtn</p><p>private Button P3SugarBtn</p><p>private Button P3CoffeeBtn</p><p>private Text doubloonsBank</p><p>private Text VPBank</p><p>private Text colonistsBank</p><p>private Text playerTurnText</p><p>private Text turnInfoText</p><p>private Text colonistShip</p><p>private Text settlerBonusDoubloon</p><p>private Text builderBonusDoubloon</p><p>private Text mayorBonusDoubloon</p><p>private Text craftsmanBonusDoubloon</p><p>private Text traderBonusDoubloon</p><p>private Text captainBonusDoubloon</p><p>private Text P1Doubloons</p><p>private Text P1VP</p><p>private Text P1Colonists</p><p>private Text P2Doubloons</p><p>private Text P2VP</p><p>private Text P2Colonists</p><p>private Text P3Doubloons</p><p>private Text P3VP</p><p>private Text P3Colonists</p><p>private Text P4Doubloons</p><p>private Text P4VP</p><p>private Text P4Colonists</p><p>private Text P5Doubloons</p><p>private Text P5VP</p><p>private Text P5Colonists</p><p>private ImageView P1Governor</p><p>private ImageView P2Governor</p><p>private ImageView P3Governor</p><p>private ImageView P4Governor</p><p>private ImageView P5Governor</p><p>private TextField cornStock</p><p>private TextField indigoStock</p><p>private TextField sugarStock</p><p>private TextField coffeeStock</p><p>private TextField tobaccoStock</p><p>private Button tradeBtn1</p><p>private Button tradeBtn2</p><p>private Button tradeBtn3</p><p>private Button tradeBtn4</p><p>private Button ship1Btn</p><p>private Button ship2Btn</p><p>private Button ship3Btn</p><p>private Button wharfShipBtn</p><p>private Button noShipBtn</p><p>private TextField ship1good0</p><p>private TextField ship1good1</p><p>private TextField ship1good2</p><p>private TextField ship1good3</p><p>private TextField ship1good4</p><p>private TextField ship1good5</p><p>private TextField ship2good0</p><p>private TextField ship2good1</p><p>private TextField ship2good2</p><p>private TextField ship2good3</p><p>private TextField ship2good4</p><p>private TextField ship2good5</p><p>private TextField ship2good6</p><p>private TextField ship3good0</p><p>private TextField ship3good1</p><p>private TextField ship3good2</p><p>private TextField ship3good3</p><p>private TextField ship3good4</p><p>private TextField ship3good5</p><p>private TextField ship3good6</p><p>private TextField ship3good7</p><p>private Text P1smWarehouseType</p><p>private Text P1lgWarehouseType1</p><p>private Text P1lgWarehouseType2</p><p>private Text P2smWarehouseType</p><p>private Text P2lgWarehouseType1</p><p>private Text P2lgWarehouseType2</p><p>private Text P3smWarehouseType</p><p>private Text P3lgWarehouseType1</p><p>private Text P3lgWarehouseType2</p><p>private Button P1smWarehouseNum</p><p>private Button P1lgWarehouseNum1</p><p>private Button P1lgWarehouseNum2</p><p>private Button P2smWarehouseNum</p><p>private Button P2lgWarehouseNum1</p><p>private Button P2lgWarehouseNum2</p><p>private Button P3smWarehouseNum</p><p>private Button P3lgWarehouseNum1</p><p>private Button P3lgWarehouseNum2</p><p>private Pane wharfPane</p><p>private TextField chatMessageTextField</p><p>private TextArea chatTextArea</p><p>private Button sendMessageBtn</p><p>private Label lastGameMoveLabel</p><p>public static ImageView[] governorImage</p><p>private static Button[][] P1buildingState</p><p>private static Button[][] P2buildingState</p><p>private static Button[][] P3buildingState</p><p>private static Button[][] P4buildingState</p><p>private static Button[][] P5buildingState</p><p>private static Button[][] P1plantationState</p><p>private static Button[][] P2plantationState</p><p>private static Button[][] P3plantationState</p><p>private static Button[][] P4plantationState</p><p>private static Button[][] P5plantationState</p><p>public static Button[] P1goods</p><p>public static Button[] P2goods</p><p>public static Button[] P3goods</p><p>public static Button[] P4goods</p><p>public static Button[] P5goods</p><p>public static Button[] tradeBtns</p><p>private static TextField[] ship1</p><p>private static TextField[] ship2</p><p>private static TextField[] ship3</p><p>private static RadioButton[][] P1BuildingColonistState</p><p>private static RadioButton[][] P2BuildingColonistState</p><p>private static RadioButton[][] P3BuildingColonistState</p><p>private static RadioButton[][] P4BuildingColonistState</p><p>private static RadioButton[][] P5BuildingColonistState</p><p>private static Text[] playerDoubloons</p><p>private static Text[] playerVP</p><p>private static Text[] playerColonists</p><p>private Player player1</p><p>private Player player2</p><p>private Player player3</p><p>private Player player4</p><p>private Player player5</p><p>public static Player[] playersList</p><p>public static Button[] buildingsList</p><p>public static Button publicQuarryBtn</p><p>public static Button publicEndTurnBtn</p><p>public static Text publicColonistShip</p><p>public static Text publicPlayerTurnText</p><p>public static Text publicTurnInfoText</p><p>public static Button[] roles</p><p>public static Button[] plantations</p><p>public static Button[] warehouseBtn1</p><p>public static Button[] warehouseBtn2</p><p>public static Button[] warehouseBtn3</p><p>public static Button[] warehouseBtn4</p><p>public static Button[] warehouseBtn5</p><p>private Text[] warehouseText1</p><p>private Text[] warehouseText2</p><p>private Text[] warehouseText3</p><p>private Text[] warehouseText4</p><p>private Text[] warehouseText5</p><p>public static Map< java.lang.String, javafx.scene.text.Text> bank</p><p>public static Map< java.lang.String, javafx.scene.control.TextField> stockOfGoods</p><p>public static Text[] rolesBonusDoubloons</p><p>public static List< java.lang.String> usedRoles</p><p>public static Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> buttonToShipMap</p><p>public static List< hr.java.game.puertorico.model.GameMove> gameMoves</p><p>private TurnManager turnManager</p><p>private GameState gameState</p><p>private static ChatService stub</p><p>private static GameSession gameSession</p><p>private static GameFileManager gameFileManager</p>
+<h2>Functions</h2>
+<p>public boolean equals(Object arg0)</p>
+<p>public String toString()</p>
+<p>public int hashCode()</p>
+<p>public void initialize()</p>
+<p>public void roleClicked(Event arg0)</p>
+<p>public void sendChatMessage()</p>
+<p>public void saveGame()</p>
+<p>protected boolean canEqual(Object arg0)</p>
+<p>public Text getVPBank()</p>
+<p>public Text getP1VP()</p>
+<p>public Text getP2VP()</p>
+<p>public void replayGame()</p>
+<p>public void setPlayer5(Player arg0)</p>
+<p>public void setPlayer1(Player arg0)</p>
+<p>public void setP1VP(Text arg0)</p>
+<p>public void setP3VP(Text arg0)</p>
+<p>public void setPlayer3(Player arg0)</p>
+<p>public void setP2VP(Text arg0)</p>
+<p>public Player getPlayer1()</p>
+<p>public void setP4VP(Text arg0)</p>
+<p>public Player getPlayer4()</p>
+<p>public Text getP5VP()</p>
+<p>public void chooseShip(Event arg0)</p>
+<p>public void setVPBank(Text arg0)</p>
+<p>public void setPlayer2(Player arg0)</p>
+<p>public Text getP4VP()</p>
+<p>public void setP5VP(Text arg0)</p>
+<p>public Player getPlayer3()</p>
+<p>public void loadGame()</p>
+<p>public Player getPlayer5()</p>
+<p>public Text getP3VP()</p>
+<p>public Player getPlayer2()</p>
+<p>public void setPlayer4(Player arg0)</p>
+<p>private T getElementByID(String arg0, java.lang.Class< T> arg1)</p>
+<p>public Button getP2PlantationBtn00()</p>
+<p>public Text getMayorBonusDoubloon()</p>
+<p>public Text getP1lgWarehouseType2()</p>
+<p>public Button getP3lgWarehouseNum1()</p>
+<p>public void setLargeWarehouseBtn(Button arg0)</p>
+<p>public Button getP1lgWarehouseNum2()</p>
+<p>public Button getP3PlantationBtn12()</p>
+<p>public void setP1PlantationBtn00(Button arg0)</p>
+<p>public void setP1PlantationBtn10(Button arg0)</p>
+<p>public Button getP3PlantationBtn20()</p>
+<p>public Text getCraftsmanBonusDoubloon()</p>
+<p>public Button getP3PlantationBtn02()</p>
+<p>public Text getP2smWarehouseType()</p>
+<p>public Button getP3PlantationBtn30()</p>
+<p>public Button getP3PlantationBtn32()</p>
+<p>public Button getP2PlantationBtn12()</p>
+<p>public Text getP3lgWarehouseType2()</p>
+<p>public Button getP1PlantationBtn31()</p>
+<p>public Button getP2smWarehouseNum()</p>
+<p>public Button getP3PlantationBtn10()</p>
+<p>public Button getP2lgWarehouseNum2()</p>
+<p>public void setSmallWarehouseBtn(Button arg0)</p>
+<p>public void setP1PlantationBtn01(Button arg0)</p>
+<p>public void setP1PlantationBtn11(Button arg0)</p>
+<p>public Button getP1PlantationBtn32()</p>
+<p>public Button getP3PlantationBtn11()</p>
+<p>public Button getP2PlantationBtn21()</p>
+<p>public Button getP2PlantationBtn10()</p>
+<p>public Button getP3PlantationBtn21()</p>
+<p>public Button getP2PlantationBtn32()</p>
+<p>public Text getSettlerBonusDoubloon()</p>
+<p>public Text getP3smWarehouseType()</p>
+<p>public Button getP1lgWarehouseNum1()</p>
+<p>public Button getP2PlantationBtn11()</p>
+<p>public Button getP3smWarehouseNum()</p>
+<p>public Button getP2PlantationBtn02()</p>
+<p>public Button getP2PlantationBtn22()</p>
+<p>public Button getP2PlantationBtn30()</p>
+<p>public Button getP2PlantationBtn01()</p>
+<p>public Button getP2PlantationBtn31()</p>
+<p>public Text getP1lgWarehouseType1()</p>
+<p>public TextField getChatMessageTextField()</p>
+<p>public void generateDocumentation()</p>
+<p>public void setP1PlantationBtn12(Button arg0)</p>
+<p>public Text getP3lgWarehouseType1()</p>
+<p>public Button getP3PlantationBtn01()</p>
+<p>public Text getP1smWarehouseType()</p>
+<p>public Button getP1smWarehouseNum()</p>
+<p>public void setP1PlantationBtn02(Button arg0)</p>
+<p>public Text getP2lgWarehouseType1()</p>
+<p>public Text getTraderBonusDoubloon()</p>
+<p>public Text getP2lgWarehouseType2()</p>
+<p>public Button getP3PlantationBtn00()</p>
+<p>public Button getP3PlantationBtn31()</p>
+<p>public Button getP3lgWarehouseNum2()</p>
+<p>public Text getBuilderBonusDoubloon()</p>
+<p>public Text getCaptainBonusDoubloon()</p>
+<p>public Label getLastGameMoveLabel()</p>
+<p>public Button getP2lgWarehouseNum1()</p>
+<p>public Button getP2PlantationBtn20()</p>
+<p>public Button getP3PlantationBtn22()</p>
+<p>public void setP2PlantationBtn10(Button arg0)</p>
+<p>public void setP2PlantationBtn00(Button arg0)</p>
+<p>public void setP2PlantationBtn21(Button arg0)</p>
+<p>public void setP2PlantationBtn30(Button arg0)</p>
+<p>public void setP3PlantationBtn12(Button arg0)</p>
+<p>public void setP3PlantationBtn11(Button arg0)</p>
+<p>public void setP3PlantationBtn21(Button arg0)</p>
+<p>public void setCaptainBonusDoubloon(Text arg0)</p>
+<p>public void setP3lgWarehouseType1(Text arg0)</p>
+<p>public void setP1smWarehouseNum(Button arg0)</p>
+<p>public void setP1lgWarehouseNum1(Button arg0)</p>
+<p>public void setP2PlantationBtn01(Button arg0)</p>
+<p>public void setP1PlantationBtn22(Button arg0)</p>
+<p>public void setSettlerBonusDoubloon(Text arg0)</p>
+<p>public void setP1lgWarehouseType2(Text arg0)</p>
+<p>public void setP1PlantationBtn31(Button arg0)</p>
+<p>public void setP3lgWarehouseType2(Text arg0)</p>
+<p>public void setP2lgWarehouseNum1(Button arg0)</p>
+<p>public void setP3smWarehouseNum(Button arg0)</p>
+<p>public void setP2lgWarehouseType2(Text arg0)</p>
+<p>public void setP2PlantationBtn12(Button arg0)</p>
+<p>public void setP1PlantationBtn21(Button arg0)</p>
+<p>public void setP3lgWarehouseNum2(Button arg0)</p>
+<p>public void setCraftsmanBonusDoubloon(Text arg0)</p>
+<p>public void setP1lgWarehouseNum2(Button arg0)</p>
+<p>public void setP1PlantationBtn20(Button arg0)</p>
+<p>public void setP3PlantationBtn30(Button arg0)</p>
+<p>public void setP2lgWarehouseType1(Text arg0)</p>
+<p>public void setP2PlantationBtn20(Button arg0)</p>
+<p>public void setP3PlantationBtn02(Button arg0)</p>
+<p>public void setP1PlantationBtn30(Button arg0)</p>
+<p>public void setP3PlantationBtn10(Button arg0)</p>
+<p>public void setP2lgWarehouseNum2(Button arg0)</p>
+<p>public void setChatMessageTextField(TextField arg0)</p>
+<p>public void setP3PlantationBtn32(Button arg0)</p>
+<p>public void setP3lgWarehouseNum1(Button arg0)</p>
+<p>public void setP2PlantationBtn31(Button arg0)</p>
+<p>public void setP2smWarehouseType(Text arg0)</p>
+<p>public void setLastGameMoveLabel(Label arg0)</p>
+<p>public void setMayorBonusDoubloon(Text arg0)</p>
+<p>public void setP2smWarehouseNum(Button arg0)</p>
+<p>public void setP2PlantationBtn11(Button arg0)</p>
+<p>public void setP2PlantationBtn22(Button arg0)</p>
+<p>public void setP2PlantationBtn32(Button arg0)</p>
+<p>public void setP1PlantationBtn32(Button arg0)</p>
+<p>public void setP3PlantationBtn20(Button arg0)</p>
+<p>public void setP3PlantationBtn31(Button arg0)</p>
+<p>public void setP2PlantationBtn02(Button arg0)</p>
+<p>public void setP3PlantationBtn00(Button arg0)</p>
+<p>public void setP3PlantationBtn01(Button arg0)</p>
+<p>public void setBuilderBonusDoubloon(Text arg0)</p>
+<p>public void setTraderBonusDoubloon(Text arg0)</p>
+<p>public void setP1smWarehouseType(Text arg0)</p>
+<p>public void setP1lgWarehouseType1(Text arg0)</p>
+<p>public void setP3smWarehouseType(Text arg0)</p>
+<p>public void setP3PlantationBtn22(Button arg0)</p>
+<p>public Button getSmallWarehouseBtn()</p>
+<p>public Button getP1PlantationBtn30()</p>
+<p>public Button getP1PlantationBtn00()</p>
+<p>public Button getLargeWarehouseBtn()</p>
+<p>public Button getP1PlantationBtn10()</p>
+<p>public Button getP1PlantationBtn01()</p>
+<p>public Button getP1PlantationBtn11()</p>
+<p>public Button getP1PlantationBtn12()</p>
+<p>public Button getP1PlantationBtn20()</p>
+<p>public Button getP1PlantationBtn02()</p>
+<p>public Button getP1PlantationBtn21()</p>
+<p>public Button getP1PlantationBtn22()</p>
+<p>public void setP5Doubloons(Text arg0)</p>
+<p>public void setP2RadioBtn93(RadioButton arg0)</p>
+<p>public void setP4Colonists(Text arg0)</p>
+<p>public void setP1RadioBtn93(RadioButton arg0)</p>
+<p>public void setP3RadioBtn81(RadioButton arg0)</p>
+<p>public void setP3CornBtn(Button arg0)</p>
+<p>public void setP2CornBtn(Button arg0)</p>
+<p>public void setP5Colonists(Text arg0)</p>
+<p>public void setP2Governor(ImageView arg0)</p>
+<p>public void setP1RadioBtn73(RadioButton arg0)</p>
+<p>public void setP3SugarBtn(Button arg0)</p>
+<p>public void setP1RadioBtn91(RadioButton arg0)</p>
+<p>public void setP2SugarBtn(Button arg0)</p>
+<p>public void setP2RadioBtn73(RadioButton arg0)</p>
+<p>public void setP1RadioBtn71(RadioButton arg0)</p>
+<p>public void setP3RadioBtn72(RadioButton arg0)</p>
+<p>public void setP3RadioBtn82(RadioButton arg0)</p>
+<p>public void setP3RadioBtn91(RadioButton arg0)</p>
+<p>public void setP2RadioBtn81(RadioButton arg0)</p>
+<p>public void setP1TobaccoBtn(Button arg0)</p>
+<p>public void setP2IndigoBtn(Button arg0)</p>
+<p>public void setColonistsBank(Text arg0)</p>
+<p>public void setColonistShip(Text arg0)</p>
+<p>public void setP1RadioBtn81(RadioButton arg0)</p>
+<p>public void setP1Colonists(Text arg0)</p>
+<p>public void setP2RadioBtn71(RadioButton arg0)</p>
+<p>public void setP2RadioBtn82(RadioButton arg0)</p>
+<p>public void setP3CoffeeBtn(Button arg0)</p>
+<p>public void setP1CornBtn(Button arg0)</p>
+<p>public void setTurnInfoText(Text arg0)</p>
+<p>public void setP2CoffeeBtn(Button arg0)</p>
+<p>public void setP1RadioBtn83(RadioButton arg0)</p>
+<p>public void setP1CoffeeBtn(Button arg0)</p>
+<p>public void setP3RadioBtn71(RadioButton arg0)</p>
+<p>public void setP4Doubloons(Text arg0)</p>
+<p>public void setP1Governor(ImageView arg0)</p>
+<p>public void setP3Governor(ImageView arg0)</p>
+<p>public void setP5Governor(ImageView arg0)</p>
+<p>public void setP3TobaccoBtn(Button arg0)</p>
+<p>public void setP3RadioBtn73(RadioButton arg0)</p>
+<p>public void setP3RadioBtn83(RadioButton arg0)</p>
+<p>public void setP2RadioBtn92(RadioButton arg0)</p>
+<p>public void setP2RadioBtn83(RadioButton arg0)</p>
+<p>public void setP3Colonists(Text arg0)</p>
+<p>public void setP4Governor(ImageView arg0)</p>
+<p>public void setCornStock(TextField arg0)</p>
+<p>public void setP1IndigoBtn(Button arg0)</p>
+<p>public void setP2RadioBtn72(RadioButton arg0)</p>
+<p>public void setP2RadioBtn91(RadioButton arg0)</p>
+<p>public void setP1SugarBtn(Button arg0)</p>
+<p>public void setP2Doubloons(Text arg0)</p>
+<p>public void setP1RadioBtn72(RadioButton arg0)</p>
+<p>public void setP3RadioBtn92(RadioButton arg0)</p>
+<p>public void setP3RadioBtn63(RadioButton arg0)</p>
+<p>public void setP1RadioBtn82(RadioButton arg0)</p>
+<p>public void setP1RadioBtn92(RadioButton arg0)</p>
+<p>public void setP3RadioBtn93(RadioButton arg0)</p>
+<p>public void setP3IndigoBtn(Button arg0)</p>
+<p>public void setDoubloonsBank(Text arg0)</p>
+<p>public void setPlayerTurnText(Text arg0)</p>
+<p>public void setP1Doubloons(Text arg0)</p>
+<p>public void setP2TobaccoBtn(Button arg0)</p>
+<p>public void setP2Colonists(Text arg0)</p>
+<p>public void setP3Doubloons(Text arg0)</p>
+<p>public void setShip1good1(TextField arg0)</p>
+<p>public void setShip2good1(TextField arg0)</p>
+<p>public void setShip3good0(TextField arg0)</p>
+<p>public void setShip3good5(TextField arg0)</p>
+<p>public void setWarehouseText2(Text[] arg0)</p>
+<p>public void setShip2good2(TextField arg0)</p>
+<p>public void setWarehouseText5(Text[] arg0)</p>
+<p>public void setShip3good3(TextField arg0)</p>
+<p>public void setTobaccoStock(TextField arg0)</p>
+<p>public void setTradeBtn3(Button arg0)</p>
+<p>public void setShip3good4(TextField arg0)</p>
+<p>public void setShip3good7(TextField arg0)</p>
+<p>public void setWarehouseText3(Text[] arg0)</p>
+<p>public void setShip1good4(TextField arg0)</p>
+<p>public void setShip1good5(TextField arg0)</p>
+<p>public void setChatTextArea(TextArea arg0)</p>
+<p>public void setShip3good2(TextField arg0)</p>
+<p>public void setGameState(GameState arg0)</p>
+<p>public void setShip3good6(TextField arg0)</p>
+<p>public void setShip1good2(TextField arg0)</p>
+<p>public void setIndigoStock(TextField arg0)</p>
+<p>public void setSendMessageBtn(Button arg0)</p>
+<p>public void setShip2good5(TextField arg0)</p>
+<p>public void setTurnManager(TurnManager arg0)</p>
+<p>public void setShip2Btn(Button arg0)</p>
+<p>public void setShip3Btn(Button arg0)</p>
+<p>public void setShip3good1(TextField arg0)</p>
+<p>public void setShip2good6(TextField arg0)</p>
+<p>public void setShip2good0(TextField arg0)</p>
+<p>public void setNoShipBtn(Button arg0)</p>
+<p>public void setShip1good3(TextField arg0)</p>
+<p>public void setWarehouseText1(Text[] arg0)</p>
+<p>public void setWarehouseText4(Text[] arg0)</p>
+<p>public void setTradeBtn1(Button arg0)</p>
+<p>public void setShip1good0(TextField arg0)</p>
+<p>public void setShip2good3(TextField arg0)</p>
+<p>public void setShip2good4(TextField arg0)</p>
+<p>public void setWharfPane(Pane arg0)</p>
+<p>public void setSugarStock(TextField arg0)</p>
+<p>public void setTradeBtn2(Button arg0)</p>
+<p>public void setTradeBtn4(Button arg0)</p>
+<p>public void setShip1Btn(Button arg0)</p>
+<p>public void setWharfShipBtn(Button arg0)</p>
+<p>public void setCoffeeStock(TextField arg0)</p>
+<p>public RadioButton getP2RadioBtn42()</p>
+<p>public Button getP2BuildingBtn21()</p>
+<p>public RadioButton getP2RadioBtn32()</p>
+<p>public Button getP2BuildingBtn23()</p>
+<p>public RadioButton getP2RadioBtn31()</p>
+<p>public Button getP3BuildingBtn10()</p>
+<p>public RadioButton getP1RadioBtn42()</p>
+<p>public Button getP2BuildingBtn22()</p>
+<p>public RadioButton getP3RadioBtn42()</p>
+<p>public RadioButton getP1RadioBtn61()</p>
+<p>public RadioButton getP1RadioBtn41()</p>
+<p>public RadioButton getP3RadioBtn52()</p>
+<p>public RadioButton getP2RadioBtn51()</p>
+<p>public RadioButton getP1RadioBtn63()</p>
+<p>public RadioButton getP1RadioBtn51()</p>
+<p>public RadioButton getP2RadioBtn53()</p>
+<p>public RadioButton getP2RadioBtn61()</p>
+<p>public Button getP3BuildingBtn02()</p>
+<p>public RadioButton getP1RadioBtn31()</p>
+<p>public RadioButton getP1RadioBtn12()</p>
+<p>public RadioButton getP1RadioBtn13()</p>
+<p>public RadioButton getP1RadioBtn32()</p>
+<p>public Button getP3BuildingBtn01()</p>
+<p>public Button getP3BuildingBtn03()</p>
+<p>public Button getP3BuildingBtn21()</p>
+<p>public Button getP3BuildingBtn22()</p>
+<p>public RadioButton getP1RadioBtn22()</p>
+<p>public RadioButton getP3RadioBtn32()</p>
+<p>public RadioButton getP2RadioBtn43()</p>
+<p>public RadioButton getP3RadioBtn22()</p>
+<p>public RadioButton getP1RadioBtn21()</p>
+<p>public RadioButton getP2RadioBtn23()</p>
+<p>public RadioButton getP2RadioBtn22()</p>
+<p>public RadioButton getP3RadioBtn43()</p>
+<p>public RadioButton getP1RadioBtn52()</p>
+<p>public RadioButton getP1RadioBtn53()</p>
+<p>public Button getP3BuildingBtn12()</p>
+<p>public RadioButton getP2RadioBtn52()</p>
+<p>public RadioButton getP1RadioBtn11()</p>
+<p>public RadioButton getP1RadioBtn43()</p>
+<p>public RadioButton getP2RadioBtn41()</p>
+<p>public Button getP3BuildingBtn13()</p>
+<p>public RadioButton getP3RadioBtn11()</p>
+<p>public RadioButton getP1RadioBtn23()</p>
+<p>public RadioButton getP3RadioBtn23()</p>
+<p>public RadioButton getP1RadioBtn33()</p>
+<p>public RadioButton getP3RadioBtn33()</p>
+<p>public Button getP3BuildingBtn11()</p>
+<p>public RadioButton getP3RadioBtn21()</p>
+<p>public RadioButton getP3RadioBtn41()</p>
+<p>public RadioButton getP3RadioBtn53()</p>
+<p>public Button getP3BuildingBtn20()</p>
+<p>public RadioButton getP2RadioBtn12()</p>
+<p>public Button getP3BuildingBtn23()</p>
+<p>public RadioButton getP3RadioBtn12()</p>
+<p>public RadioButton getP2RadioBtn11()</p>
+<p>public RadioButton getP3RadioBtn13()</p>
+<p>public RadioButton getP3RadioBtn31()</p>
+<p>public RadioButton getP3RadioBtn51()</p>
+<p>public RadioButton getP1RadioBtn62()</p>
+<p>public Button getP3BuildingBtn00()</p>
+<p>public RadioButton getP2RadioBtn13()</p>
+<p>public RadioButton getP2RadioBtn33()</p>
+<p>public RadioButton getP2RadioBtn21()</p>
+<p>public Button getTraderBtn()</p>
+<p>public Button getHospiceBtn()</p>
+<p>public Button getFactoryBtn()</p>
+<p>public Button getWharfBtn()</p>
+<p>public Button getPlantationBtn2()</p>
+<p>public Button getQuarryBtn()</p>
+<p>public Button getP1BuildingBtn02()</p>
+<p>public Button getUniversityBtn()</p>
+<p>public Button getP1BuildingBtn03()</p>
+<p>public Button getSmallIndigoBtn()</p>
+<p>public Button getCaptainBtn()</p>
+<p>public Button getP1BuildingBtn13()</p>
+<p>public Button getP1BuildingBtn21()</p>
+<p>public Button getPlantationBtn5()</p>
+<p>public Button getP1BuildingBtn23()</p>
+<p>public Button getP1BuildingBtn12()</p>
+<p>public Button getTobaccoBtn()</p>
+<p>public Button getPlantationBtn6()</p>
+<p>public Button getP1BuildingBtn01()</p>
+<p>public Button getP2BuildingBtn00()</p>
+<p>public Button getP2BuildingBtn03()</p>
+<p>public Button getP2BuildingBtn11()</p>
+<p>public Button getP2BuildingBtn13()</p>
+<p>public Button getP2BuildingBtn20()</p>
+<p>public Button getMayorBtn()</p>
+<p>public Button getOfficeBtn()</p>
+<p>public Button getPlantationBtn4()</p>
+<p>public Button getP1BuildingBtn10()</p>
+<p>public Button getP1BuildingBtn00()</p>
+<p>public Button getHaciendaBtn()</p>
+<p>public Button getConstructionBtn()</p>
+<p>public Button getPlantationBtn0()</p>
+<p>public Button getP2BuildingBtn01()</p>
+<p>public Button getP2BuildingBtn02()</p>
+<p>public Button getP2BuildingBtn10()</p>
+<p>public Button getIndigoBtn()</p>
+<p>public Button getSettlerBtn()</p>
+<p>public Button getCoffeeBtn()</p>
+<p>public Button getLargeMarketBtn()</p>
+<p>public Button getPlantationBtn1()</p>
+<p>public Button getPlantationBtn3()</p>
+<p>public Button getP1BuildingBtn11()</p>
+<p>public Button getP1BuildingBtn20()</p>
+<p>public Button getP1BuildingBtn22()</p>
+<p>public Button getP2BuildingBtn12()</p>
+<p>public Button getProspectorBtn()</p>
+<p>public Button getBuilderBtn()</p>
+<p>public Button getSugarBtn()</p>
+<p>public Button getHarborBtn()</p>
+<p>public Button getCraftsmanBtn()</p>
+<p>public Button getEndTurnBtn()</p>
+<p>public Button getSmallSugarBtn()</p>
+<p>public Button getSmallMarketBtn()</p>
+<p>public RadioButton getP2RadioBtn71()</p>
+<p>public RadioButton getP1RadioBtn71()</p>
+<p>public RadioButton getP3RadioBtn72()</p>
+<p>public RadioButton getP1RadioBtn81()</p>
+<p>public Button getP1TobaccoBtn()</p>
+<p>public Button getP1IndigoBtn()</p>
+<p>public RadioButton getP2RadioBtn81()</p>
+<p>public RadioButton getP2RadioBtn63()</p>
+<p>public RadioButton getP2RadioBtn82()</p>
+<p>public RadioButton getP3RadioBtn83()</p>
+<p>public Button getP1CoffeeBtn()</p>
+<p>public RadioButton getP1RadioBtn72()</p>
+<p>public Text getColonistsBank()</p>
+<p>public Text getTurnInfoText()</p>
+<p>public Text getColonistShip()</p>
+<p>public Text getP1Doubloons()</p>
+<p>public Text getP1Colonists()</p>
+<p>public RadioButton getP2RadioBtn91()</p>
+<p>public Text getP2Colonists()</p>
+<p>public Text getP3Colonists()</p>
+<p>public RadioButton getP2RadioBtn73()</p>
+<p>public Text getP4Colonists()</p>
+<p>public Text getP5Doubloons()</p>
+<p>public Text getP5Colonists()</p>
+<p>public ImageView getP1Governor()</p>
+<p>public Text getP4Doubloons()</p>
+<p>public ImageView getP2Governor()</p>
+<p>public RadioButton getP3RadioBtn62()</p>
+<p>public RadioButton getP3RadioBtn81()</p>
+<p>public Button getP2IndigoBtn()</p>
+<p>public Text getP2Doubloons()</p>
+<p>public RadioButton getP3RadioBtn71()</p>
+<p>public RadioButton getP1RadioBtn91()</p>
+<p>public RadioButton getP2RadioBtn93()</p>
+<p>public RadioButton getP3RadioBtn93()</p>
+<p>public Button getP1CornBtn()</p>
+<p>public RadioButton getP1RadioBtn92()</p>
+<p>public Button getP2CoffeeBtn()</p>
+<p>public Button getP3CornBtn()</p>
+<p>public Button getP2SugarBtn()</p>
+<p>public Button getP3IndigoBtn()</p>
+<p>public RadioButton getP1RadioBtn82()</p>
+<p>public Text getPlayerTurnText()</p>
+<p>public Text getP3Doubloons()</p>
+<p>public RadioButton getP3RadioBtn63()</p>
+<p>public Button getP3TobaccoBtn()</p>
+<p>public Button getP3CoffeeBtn()</p>
+<p>public RadioButton getP2RadioBtn62()</p>
+<p>public RadioButton getP1RadioBtn93()</p>
+<p>public RadioButton getP2RadioBtn72()</p>
+<p>public RadioButton getP3RadioBtn73()</p>
+<p>public RadioButton getP1RadioBtn83()</p>
+<p>public Button getP1SugarBtn()</p>
+<p>public RadioButton getP3RadioBtn61()</p>
+<p>public RadioButton getP2RadioBtn92()</p>
+<p>public RadioButton getP1RadioBtn73()</p>
+<p>public RadioButton getP2RadioBtn83()</p>
+<p>public RadioButton getP3RadioBtn91()</p>
+<p>public RadioButton getP3RadioBtn92()</p>
+<p>public Button getP2TobaccoBtn()</p>
+<p>public Text getDoubloonsBank()</p>
+<p>public RadioButton getP3RadioBtn82()</p>
+<p>public Button getP3SugarBtn()</p>
+<p>public Button getP2CornBtn()</p>
+<p>public void addRemoveColonist(Event arg0)</p>
+<p>public TextField getShip3good7()</p>
+<p>public Button getShip2Btn()</p>
+<p>public TextField getShip3good2()</p>
+<p>public Text[] getWarehouseText1()</p>
+<p>public TextField getIndigoStock()</p>
+<p>public TextField getShip1good2()</p>
+<p>public Button getTradeBtn1()</p>
+<p>public TextField getShip3good5()</p>
+<p>public TextField getSugarStock()</p>
+<p>public Button getTradeBtn4()</p>
+<p>public TextField getShip1good5()</p>
+<p>public TextField getShip2good1()</p>
+<p>public TextField getShip3good3()</p>
+<p>public TextField getShip2good6()</p>
+<p>public Button getSendMessageBtn()</p>
+<p>public Text[] getWarehouseText2()</p>
+<p>public Text[] getWarehouseText3()</p>
+<p>public Text[] getWarehouseText5()</p>
+<p>public TextField getTobaccoStock()</p>
+<p>public TextField getShip2good3()</p>
+<p>public TextField getShip1good3()</p>
+<p>public TextField getShip3good0()</p>
+<p>public Button getWharfShipBtn()</p>
+<p>public ImageView getP3Governor()</p>
+<p>public TextField getShip1good0()</p>
+<p>public GameState getGameState()</p>
+<p>public TextField getShip2good5()</p>
+<p>public TextField getShip2good0()</p>
+<p>public TextField getCornStock()</p>
+<p>public ImageView getP4Governor()</p>
+<p>public Button getShip1Btn()</p>
+<p>public Pane getWharfPane()</p>
+<p>public TextField getShip2good2()</p>
+<p>public TextField getShip3good4()</p>
+<p>public TextField getShip3good1()</p>
+<p>public void buildingClicked(Event arg0)</p>
+<p>public TextField getShip1good4()</p>
+<p>public Text[] getWarehouseText4()</p>
+<p>public Button getTradeBtn2()</p>
+<p>public void plantationClicked(Event arg0)</p>
+<p>public Button getNoShipBtn()</p>
+<p>public TextField getShip2good4()</p>
+<p>public TextField getShip3good6()</p>
+<p>public TextArea getChatTextArea()</p>
+<p>public ImageView getP5Governor()</p>
+<p>public TextField getCoffeeStock()</p>
+<p>public Button getTradeBtn3()</p>
+<p>public TextField getShip1good1()</p>
+<p>public TurnManager getTurnManager()</p>
+<p>public Button getShip3Btn()</p>
+<p>public void setP2RadioBtn31(RadioButton arg0)</p>
+<p>public void setP1RadioBtn21(RadioButton arg0)</p>
+<p>public void setP3RadioBtn31(RadioButton arg0)</p>
+<p>public void setP3RadioBtn33(RadioButton arg0)</p>
+<p>public void setP1RadioBtn41(RadioButton arg0)</p>
+<p>public void setP3RadioBtn41(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn01(Button arg0)</p>
+<p>public void setP3RadioBtn42(RadioButton arg0)</p>
+<p>public void setP3RadioBtn43(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn11(Button arg0)</p>
+<p>public void setP1RadioBtn23(RadioButton arg0)</p>
+<p>public void setP3RadioBtn22(RadioButton arg0)</p>
+<p>public void setP1RadioBtn32(RadioButton arg0)</p>
+<p>public void setP1RadioBtn51(RadioButton arg0)</p>
+<p>public void setP2RadioBtn51(RadioButton arg0)</p>
+<p>public void setP3RadioBtn51(RadioButton arg0)</p>
+<p>public void setP2RadioBtn41(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn21(Button arg0)</p>
+<p>public void setP2RadioBtn42(RadioButton arg0)</p>
+<p>public void setP2RadioBtn53(RadioButton arg0)</p>
+<p>public void setP3RadioBtn52(RadioButton arg0)</p>
+<p>public void setP3RadioBtn53(RadioButton arg0)</p>
+<p>public void setP1RadioBtn62(RadioButton arg0)</p>
+<p>public void setP1RadioBtn61(RadioButton arg0)</p>
+<p>public void setP2RadioBtn61(RadioButton arg0)</p>
+<p>public void setP1RadioBtn42(RadioButton arg0)</p>
+<p>public void setP3RadioBtn12(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn03(Button arg0)</p>
+<p>public void setP2RadioBtn22(RadioButton arg0)</p>
+<p>public void setP1RadioBtn52(RadioButton arg0)</p>
+<p>public void setP2RadioBtn32(RadioButton arg0)</p>
+<p>public void setP2RadioBtn33(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn12(Button arg0)</p>
+<p>public void setP3BuildingBtn23(Button arg0)</p>
+<p>public void setP1RadioBtn11(RadioButton arg0)</p>
+<p>public void setP1RadioBtn12(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn13(Button arg0)</p>
+<p>public void setP1RadioBtn13(RadioButton arg0)</p>
+<p>public void setP3RadioBtn32(RadioButton arg0)</p>
+<p>public void setP2RadioBtn43(RadioButton arg0)</p>
+<p>public void setP1RadioBtn53(RadioButton arg0)</p>
+<p>public void setP1RadioBtn22(RadioButton arg0)</p>
+<p>public void setP1RadioBtn43(RadioButton arg0)</p>
+<p>public void setP2RadioBtn52(RadioButton arg0)</p>
+<p>public void setP2RadioBtn11(RadioButton arg0)</p>
+<p>public void setP2RadioBtn62(RadioButton arg0)</p>
+<p>public void setP2RadioBtn13(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn20(Button arg0)</p>
+<p>public void setP2RadioBtn63(RadioButton arg0)</p>
+<p>public void setP3RadioBtn11(RadioButton arg0)</p>
+<p>public void setP1RadioBtn63(RadioButton arg0)</p>
+<p>public void setP3RadioBtn61(RadioButton arg0)</p>
+<p>public void setP3RadioBtn62(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn22(Button arg0)</p>
+<p>public void setP3RadioBtn13(RadioButton arg0)</p>
+<p>public void setP2RadioBtn21(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn02(Button arg0)</p>
+<p>public void setP3RadioBtn23(RadioButton arg0)</p>
+<p>public void setP2RadioBtn23(RadioButton arg0)</p>
+<p>public void setP1RadioBtn31(RadioButton arg0)</p>
+<p>public void setP1RadioBtn33(RadioButton arg0)</p>
+<p>public void setP3BuildingBtn10(Button arg0)</p>
+<p>public void setP2RadioBtn12(RadioButton arg0)</p>
+<p>public void setP3RadioBtn21(RadioButton arg0)</p>
+<p>public void setPlantationBtn1(Button arg0)</p>
+<p>public void setP2BuildingBtn03(Button arg0)</p>
+<p>public void setP1BuildingBtn03(Button arg0)</p>
+<p>public void setP2BuildingBtn12(Button arg0)</p>
+<p>public void setP2BuildingBtn11(Button arg0)</p>
+<p>public void setP1BuildingBtn02(Button arg0)</p>
+<p>public void setP1BuildingBtn21(Button arg0)</p>
+<p>public void setEndTurnBtn(Button arg0)</p>
+<p>public void setP2BuildingBtn13(Button arg0)</p>
+<p>public void setSmallIndigoBtn(Button arg0)</p>
+<p>public void setP2BuildingBtn21(Button arg0)</p>
+<p>public void setTraderBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn20(Button arg0)</p>
+<p>public void setP2BuildingBtn00(Button arg0)</p>
+<p>public void setHaciendaBtn(Button arg0)</p>
+<p>public void setP2BuildingBtn22(Button arg0)</p>
+<p>public void startNewGame(Event arg0)</p>
+<p>public void setP2BuildingBtn20(Button arg0)</p>
+<p>public void setHospiceBtn(Button arg0)</p>
+<p>public void setCaptainBtn(Button arg0)</p>
+<p>public void setOfficeBtn(Button arg0)</p>
+<p>public void setQuarryBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn00(Button arg0)</p>
+<p>public void setSettlerBtn(Button arg0)</p>
+<p>public void setProspectorBtn(Button arg0)</p>
+<p>public void setWharfBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn12(Button arg0)</p>
+<p>public void setP2BuildingBtn01(Button arg0)</p>
+<p>public void setSmallSugarBtn(Button arg0)</p>
+<p>public void setHarborBtn(Button arg0)</p>
+<p>public void setPlantationBtn3(Button arg0)</p>
+<p>public void setPlantationBtn2(Button arg0)</p>
+<p>public void setPlantationBtn5(Button arg0)</p>
+<p>public void setP2BuildingBtn02(Button arg0)</p>
+<p>public void setP2BuildingBtn23(Button arg0)</p>
+<p>public void setP3BuildingBtn00(Button arg0)</p>
+<p>public void setIndigoBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn22(Button arg0)</p>
+<p>public void setSugarBtn(Button arg0)</p>
+<p>public void setCoffeeBtn(Button arg0)</p>
+<p>public void setPlantationBtn0(Button arg0)</p>
+<p>public void setPlantationBtn6(Button arg0)</p>
+<p>public void setP1BuildingBtn01(Button arg0)</p>
+<p>public void setP1BuildingBtn13(Button arg0)</p>
+<p>public void setCraftsmanBtn(Button arg0)</p>
+<p>public void endPlayerTurn(Event arg0)</p>
+<p>public void setPlantationBtn4(Button arg0)</p>
+<p>public void setFactoryBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn23(Button arg0)</p>
+<p>public void setBuilderBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn11(Button arg0)</p>
+<p>public void setMayorBtn(Button arg0)</p>
+<p>public void setConstructionBtn(Button arg0)</p>
+<p>public void setLargeMarketBtn(Button arg0)</p>
+<p>public void setUniversityBtn(Button arg0)</p>
+<p>public void setP2BuildingBtn10(Button arg0)</p>
+<p>public void setTobaccoBtn(Button arg0)</p>
+<p>public void setP1BuildingBtn10(Button arg0)</p>
+<p>public void setSmallMarketBtn(Button arg0)</p>
+<p>public void goodClicked(Event arg0)</p>
+<h2>Constructors</h2>
+<p>public PuertoRicoController()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.tcp.Client</h2>
+<h2>Variables</h2>
+<p>private static Integer playerOnePort</p><p>private static Integer playerTwoPort</p><p>private static Integer playerThreePort</p><p>private static String host</p>
+<h2>Functions</h2>
+<p>private static void playerTwoSendRequest(GameState arg0)</p>
+<p>private static void playerThreeSendRequest(GameState arg0)</p>
+<p>private static void playerOneSendRequest(GameState arg0)</p>
+<p>public static void sendGameState()</p>
+<p>private static void sendSerializableRequestToPlayerThree(Socket arg0, GameState arg1)</p>
+<p>private static void sendSerializableRequestToPlayerTwo(Socket arg0, GameState arg1)</p>
+<p>private static void sendSerializableRequestToPlayerOne(Socket arg0, GameState arg1)</p>
+<p>private static void initConfig()</p>
+<h2>Constructors</h2>
+<p>public Client()</p>
+__________________________________________________________________________________________________
+<h2>public abstract hr.java.game.puertorico.thread.GameMoveThread</h2>
+<h2>Variables</h2>
+<p>private static Boolean gameMoveFIleAccessInProgess</p>
+<h2>Functions</h2>
+<p>protected synchronized GameMove getLastGameMoveFromFile()</p>
+<p>protected synchronized void saveNewGameMoveToFile(GameMove arg0)</p>
+<h2>Constructors</h2>
+<p>public GameMoveThread()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.thread.GetLastGameMoveThread</h2>
+<h2>Variables</h2>
+<p>private Label label</p><p>private static final DateTimeFormatter dateTimeFormatter</p>
+<h2>Functions</h2>
+<p>public void run()</p>
+<h2>Constructors</h2>
+<p>public GetLastGameMoveThread(Label arg0)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.thread.PlayerOneServerThread</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public void run()</p>
+<p>private static void playerOneAcceptRequests()</p>
+<p>private static void processSerializableClient(Socket arg0)</p>
+<h2>Constructors</h2>
+<p>public PlayerOneServerThread()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.thread.PlayerThreeServerThread</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public void run()</p>
+<p>private static void playerThreeAcceptRequests()</p>
+<p>private static void processSerializableClient(Socket arg0)</p>
+<h2>Constructors</h2>
+<p>public PlayerThreeServerThread()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.thread.PlayerTwoServerThread</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public void run()</p>
+<p>private static void playerTwoAcceptRequests()</p>
+<p>private static void processSerializableClient(Socket arg0)</p>
+<h2>Constructors</h2>
+<p>public PlayerTwoServerThread()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.thread.SaveNewGameMoveThread</h2>
+<h2>Variables</h2>
+<p>private GameMove gameMove</p>
+<h2>Functions</h2>
+<p>public void run()</p>
+<h2>Constructors</h2>
+<p>public SaveNewGameMoveThread(GameMove arg0)</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.util.DialogUtils</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static void noMoreRoomAlert(String arg0)</p>
+<p>public static void noGoodToShipAlert(String arg0)</p>
+<p>public static void fullShipAlert()</p>
+<p>public static void cantTradeThisGoodAlert()</p>
+<p>public static void cantSelectMoreAlert(int arg0, String arg1)</p>
+<p>public static String confirmationDialog(String arg0)</p>
+<p>public static void successDialog(String arg0)</p>
+<p>public static void haveToDistributeColonistsAlert()</p>
+<p>public static void notEnoughDoubloonsAlert()</p>
+<p>public static void alreadyTradedAlert()</p>
+<p>public static String confirmationDialogHacienda()</p>
+<p>public static void cantTradeAnymoreAlert()</p>
+<p>public static String chooseGoodToLeaveDialog(List< java.lang.String> arg0)</p>
+<p>public static void winnerAnnouncement(String arg0)</p>
+<p>public static void haveToLoadAlert()</p>
+<p>public static void producedGoodsInfo(String arg0, int arg1)</p>
+<p>public static void showBuildingLimitationAlert()</p>
+<p>public static String chooseGoodToShipDialog(List< java.lang.String> arg0)</p>
+<p>public static String chooseBonusGoodDialog(List< java.lang.String> arg0)</p>
+<p>public static void producedBonusGoodInfo(String arg0)</p>
+<h2>Constructors</h2>
+<p>public DialogUtils()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.util.DocumentationUtils</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>private static String getSimpleName(String arg0)</p>
+<p>private static String getTypeName(java.lang.Class< ?> arg0)</p>
+<p>public static void generateHtmlDocumentation()</p>
+<h2>Constructors</h2>
+<p>public DocumentationUtils()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.util.GameMoveUtils</h2>
+<h2>Variables</h2>
+<p>private static final String GAME_MOVE_HISTORY_FILE_NAME</p><p>private static List< hr.java.game.puertorico.model.GameMove> gameMoveList</p><p>private static Labeled b</p>
+<h2>Functions</h2>
+<p>private static File getFile()</p>
+<p>public static void saveGameMove(Labeled arg0, String arg1)</p>
+<p>public static GameMove getLastGameMove()</p>
+<p>public static void saveNewGameMove(GameMove arg0)</p>
+<h2>Constructors</h2>
+<p>public GameMoveUtils()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.util.GameUtils</h2>
+<h2>Variables</h2>
+
+<h2>Functions</h2>
+<p>public static void disableAllButtons()</p>
+<p>public static void activateButtons()</p>
+<p>public static void showWinners()</p>
+<p>public static void resetUsedRolesAndAddBonuses(Button[] arg0, Text[] arg1)</p>
+<p>public static void disablePlayerColonistButtons(Player arg0)</p>
+<p>public static List< hr.java.game.puertorico.model.Player> tieBreaker(List< hr.java.game.puertorico.model.Player> arg0)</p>
+<p>public static void resetTraderShip(Button[] arg0)</p>
+<p>public static void resetCaptainShip(Map< javafx.scene.control.Button, javafx.scene.control.TextField[]> arg0)</p>
+<h2>Constructors</h2>
+<p>public GameUtils()</p>
+__________________________________________________________________________________________________
+<h2>public hr.java.game.puertorico.util.XmlUtils</h2>
+<h2>Variables</h2>
+<p>private static final String GAME_MOVES_XML_FILE_NAME</p><p>private static final DateTimeFormatter dateTimeFormatter</p>
+<h2>Functions</h2>
+<p>public static List< hr.java.game.puertorico.model.GameMove> readGameMovesFromXml()</p>
+<p>public static void saveGameMovesToXml(List< hr.java.game.puertorico.model.GameMove> arg0)</p>
+<h2>Constructors</h2>
+<p>public XmlUtils()</p>
+__________________________________________________________________________________________________
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><GameMoves><GameMove><Role/><PlayerTurn>1</PlayerTurn><LocalDateTime>10.06.2026 23:01:24</LocalDateTime></GameMove><GameMove><Role>settler</Role><PlayerTurn>1</PlayerTurn><LocalDateTime>10.06.2026 23:01:28</LocalDateTime><Text>Quarry
+
+〇</Text><PositionX>0</PositionX><PositionY>1</PositionY></GameMove><GameMove><Role>settler</Role><PlayerTurn>1</PlayerTurn><LocalDateTime>10.06.2026 23:01:30</LocalDateTime><Text>Sugar
+
+〇</Text><PositionX>0</PositionX><PositionY>2</PositionY></GameMove><GameMove><Role>settler</Role><PlayerTurn>2</PlayerTurn><LocalDateTime>10.06.2026 23:01:32</LocalDateTime><Text/></GameMove><GameMove><Role>settler</Role><PlayerTurn>2</PlayerTurn><LocalDateTime>10.06.2026 23:01:36</LocalDateTime><Text>Indigo
+
+〇</Text><PositionX>0</PositionX><PositionY>0</PositionY></GameMove><GameMove><Role>settler</Role><PlayerTurn>2</PlayerTurn><LocalDateTime>10.06.2026 23:01:38</LocalDateTime><Text>Sugar
+
+〇</Text><PositionX>0</PositionX><PositionY>2</PositionY></GameMove><GameMove><Role>settler</Role><PlayerTurn>0</PlayerTurn><LocalDateTime>10.06.2026 23:01:40</LocalDateTime><Text/></GameMove><GameMove><Role>settler</Role><PlayerTurn>0</PlayerTurn><LocalDateTime>10.06.2026 23:01:41</LocalDateTime><Text>Corn
+
+〇</Text><PositionX>0</PositionX><PositionY>0</PositionY></GameMove><GameMove><Role>settler</Role><PlayerTurn>0</PlayerTurn><LocalDateTime>10.06.2026 23:01:44</LocalDateTime><Text>Sugar
+
+〇</Text><PositionX>0</PositionX><PositionY>2</PositionY></GameMove><GameMove><Role/><PlayerTurn>2</PlayerTurn><LocalDateTime>10.06.2026 23:01:45</LocalDateTime></GameMove><GameMove><Role/><PlayerTurn>2</PlayerTurn><LocalDateTime>10.06.2026 23:01:48</LocalDateTime></GameMove></GameMoves>
